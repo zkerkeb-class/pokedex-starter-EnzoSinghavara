@@ -2,7 +2,7 @@
 const Header = () => {
     return (
         <div>
-            <h1>Bonjour</h1>
+            <h1>Bonjour, bienvenue au Pokédex</h1>
         </div>
     )
 }
