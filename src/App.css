@@ -1,42 +1,62 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app-container {
+  padding: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.filters-container {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.search-input, .type-select {
+  padding: 8px;
+  border: 1px solid #d4d0d7;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
-.card {
-  padding: 2em;
+.search-input {
+  width: 200px;
 }
 
-.read-the-docs {
-  color: #888;
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+.pokemon-card-container {
+  margin: 10px;
+}
+
+.type-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+}
+
+/* Ajoutez des couleurs pour chaque type */
+.fire { background-color: #F08030; }
+.water { background-color: #6890F0; }
+.grass { background-color: #78C850; }
+.electric { background-color: #F8D030; }
+.psychic { background-color: #F85888; }
+.ice { background-color: #98D8D8; }
+.dragon { background-color: #7038F8; }
+.dark { background-color: #705848; }
+.fairy { background-color: #EE99AC; }
+.normal { background-color: #A8A878; }
+.fighting { background-color: #C03028; }
+.flying { background-color: #A890F0; }
+.poison { background-color: #A040A0; }
+.ground { background-color: #E0C068; }
+.rock { background-color: #B8A038; }
+.bug { background-color: #A8B820; }
+.ghost { background-color: #705898; }
+.steel { background-color: #B8B8D0; }
