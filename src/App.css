@@ -1,5 +1,7 @@
 #root {
   max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .app-container {
@@ -25,13 +27,18 @@
 }
 
 .pokemon-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
 }
 
 .pokemon-card-container {
-  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px; /* Hauteur minimale pour éviter les sauts */
 }
 
 .type-badge {

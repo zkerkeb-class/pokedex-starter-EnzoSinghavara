@@ -1,40 +1,483 @@
-.pokemon-card{
-    border: 1px solid #d4d0d7;
-    padding: 10px;
+/* Styles de base de la carte avec perspective pour l'effet 3D */
+.pokemon-card-wrapper {
+    perspective: 1000px;
+    width: 250px;
+    height: 350px;
+    margin: 20px;
+    /* Empêche les cartes de bouger les autres au survol */
+    transform-style: preserve-3d;
+    position: relative;
+    z-index: 1;
+}
 
+.pokemon-card-wrapper:hover {
+    z-index: 2;
+}
+
+.pokemon-card {
+    width: 250px;
+    padding: 10px;
     border-radius: 8px;
+    background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+    position: relative;
+    transition: transform 0.3s ease;
 }
 
-.pokemon-name{
-    font-size: 20px;
-    font-weight: bold;
+.pokemon-card:hover {
+    transform: scale(1.05) rotateY(10deg);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
 }
 
-.pokemon-name-container{
+/*
+.pokemon-card.flipped {
+    transform: rotateY(180deg);
+}
+*/
+
+/* Face avant et arrière */
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    transition: transform 0.6s;
+}
+
+.card-front {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+}
+
+/*
+.card-back {
+    transform: rotateY(180deg);
+    background: url('chemin/vers/votre/image/pokeball.png') no-repeat center center;
+    background-size: cover;
+}
+*/
+
+/*===============================================================================================================================*/
+
+/* Styles spécifiques par type */
+/* Grass */
+.pokemon-card[data-type="grass"] {
+    border: 2px solid #3DA224;
+}
+.pokemon-card[data-type="くさ"] {
+    border: 2px solid #3DA224;
+}
+.pokemon-card[data-type="草"] {
+    border: 2px solid #3DA224;
+}
+.pokemon-card[data-type="plante"] {
+    border: 2px solid #3DA224;
+}
+
+/* Poison */
+.pokemon-card[data-type="poison"] {
+    border: 2px solid #923FCC;
+}
+.pokemon-card[data-type="どく"] {
+    border: 2px solid #923FCC;
+}
+.pokemon-card[data-type="毒"] {
+    border: 2px solid #923FCC;
+}
+
+/* Fire */
+.pokemon-card[data-type="fire"] {
+    border: 2px solid #E72324;
+}
+.pokemon-card[data-type="ほのお"] {
+    border: 2px solid #E72324;
+}
+.pokemon-card[data-type="火"] {
+    border: 2px solid #E72324;
+}
+.pokemon-card[data-type="feu"] {
+    border: 2px solid #E72324;
+}
+
+/* Flying */
+.pokemon-card[data-type="flying"] {
+    border: 2px solid #82BAF0;
+}
+.pokemon-card[data-type="ひこう"] {
+    border: 2px solid #82BAF0;
+}
+.pokemon-card[data-type="飞行"] {
+    border: 2px solid #82BAF0;
+}
+.pokemon-card[data-type="vol"] {
+    border: 2px solid #82BAF0;
+}
+
+/* Water */
+.pokemon-card[data-type="water"] {
+    border: 2px solid #2481F0;
+}
+.pokemon-card[data-type="みず"] {
+    border: 2px solid #2481F0;
+}
+.pokemon-card[data-type="水"] {
+    border: 2px solid #2481F0;
+}
+.pokemon-card[data-type="eau"] {
+    border: 2px solid #2481F0;
+}
+
+/* Bug */
+.pokemon-card[data-type="bug"] {
+    border: 2px solid #92A212;
+}
+.pokemon-card[data-type="むし"] {
+    border: 2px solid #92A212;
+}
+.pokemon-card[data-type="虫"] {
+    border: 2px solid #92A212;
+}
+.pokemon-card[data-type="insecte"] {
+    border: 2px solid #92A212;
+}
+
+/* Normal */
+.pokemon-card[data-type="normal"] {
+    border: 2px solid #A0A2A0;
+}
+.pokemon-card[data-type="ノーマル"] {
+    border: 2px solid #A0A2A0;
+}
+.pokemon-card[data-type="一般"] {
+    border: 2px solid #A0A2A0;
+}
+
+/* Electric */
+.pokemon-card[data-type="electric"] {
+    border: 2px solid #FAC100;
+}
+.pokemon-card[data-type="でんき"] {
+    border: 2px solid #FAC100;
+}
+.pokemon-card[data-type="电"] {
+    border: 2px solid #FAC100;
+}
+.pokemon-card[data-type="électrik"] {
+    border: 2px solid #FAC100;
+}
+
+/* Ground */
+.pokemon-card[data-type="ground"] {
+    border: 2px solid #92501B;
+}
+.pokemon-card[data-type="じめん"] {
+    border: 2px solid #92501B;
+}
+.pokemon-card[data-type="地面"] {
+    border: 2px solid #92501B;
+}
+.pokemon-card[data-type="Sol"] {
+    border: 2px solid #92501B;
+}
+
+/* Fairy */
+.pokemon-card[data-type="fairy"] {
+    border: 2px solid #EF71F0;
+}
+.pokemon-card[data-type="フェアリー"] {
+    border: 2px solid #EF71F0;
+}
+.pokemon-card[data-type="妖精"] {
+    border: 2px solid #EF71F0;
+}
+.pokemon-card[data-type="fée"] {
+    border: 2px solid #EF71F0;
+}
+
+/* Fighting */
+.pokemon-card[data-type="fighting"] {
+    border: 2px solid #FF8100;
+}
+.pokemon-card[data-type="かくとう"] {
+    border: 2px solid #FF8100;
+}
+.pokemon-card[data-type="格斗"] {
+    border: 2px solid #FF8100;
+}
+.pokemon-card[data-type="combat"] {
+    border: 2px solid #FF8100;
+}
+
+/* Psychic */
+.pokemon-card[data-type="psychic"] {
+    border: 2px solid #EF3F7A;
+}
+.pokemon-card[data-type="エスパー"] {
+    border: 2px solid #EF3F7A;
+}
+.pokemon-card[data-type="超能力"] {
+    border: 2px solid #EF3F7A;
+}
+.pokemon-card[data-type="psy"] {
+    border: 2px solid #EF3F7A;
+}
+
+/* Rock */
+.pokemon-card[data-type="rock"] {
+    border: 2px solid #B0AB82;
+}
+.pokemon-card[data-type="いわ"] {
+    border: 2px solid #B0AB82;
+}
+.pokemon-card[data-type="岩石"] {
+    border: 2px solid #B0AB82;
+}
+.pokemon-card[data-type="roche"] {
+    border: 2px solid #B0AB82;
+}
+
+/* Steel */
+.pokemon-card[data-type="steel"] {
+    border: 2px solid #60A2B9;
+}
+.pokemon-card[data-type="はがね"] {
+    border: 2px solid #60A2B9;
+}
+.pokemon-card[data-type="钢"] {
+    border: 2px solid #60A2B9;
+}
+.pokemon-card[data-type="acier"] {
+    border: 2px solid #60A2B9;
+}
+
+/* Ice */
+.pokemon-card[data-type="ice"] {
+    border: 2px solid #3DD9FF;
+}
+.pokemon-card[data-type="こおり"] {
+    border: 2px solid #3DD9FF;
+}
+.pokemon-card[data-type="冰"] {
+    border: 2px solid #3DD9FF;
+}
+.pokemon-card[data-type="glace"] {
+    border: 2px solid #3DD9FF;
+}
+
+/* Ghost */
+.pokemon-card[data-type="ghost"] {
+    border: 2px solid #713F71;
+}
+.pokemon-card[data-type="ゴースト"] {
+    border: 2px solid #713F71;
+}
+.pokemon-card[data-type="幽灵"] {
+    border: 2px solid #713F71;
+}
+.pokemon-card[data-type="spectre"] {
+    border: 2px solid #713F71;
+}
+
+/* Dragon */
+.pokemon-card[data-type="dragon"] {
+    border: 2px solid #4F60E2;
+}
+.pokemon-card[data-type="ドラゴン"] {
+    border: 2px solid #4F60E2;
+}
+.pokemon-card[data-type="龙"] {
+    border: 2px solid #4F60E2;
+}
+
+/* Dark */
+.pokemon-card[data-type="dark"] {
+    border: 2px solid #4F3F3D;
+}
+.pokemon-card[data-type="あく"] {
+    border: 2px solid #4F3F3D;
+}
+.pokemon-card[data-type="惡"] {
+    border: 2px solid #4F3F3D;
+}
+.pokemon-card[data-type="ténèbres"] {
+    border: 2px solid #4F3F3D;
+}
+
+/*===============================================================================================================================*/
+
+/* Bouton Shiny caché */
+.shiny-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ffd700;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    z-index: 2;
+}
+
+.pokemon-card:hover .shiny-toggle {
+    opacity: 1;
+}
+
+.shiny-toggle:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #ffd700;
+}
+
+.shiny-toggle.active {
+    background: #ff9900;
+    box-shadow: 0 0 15px #ff9900;
+}
+
+/* Mise en page responsive */
+@media (max-width: 768px) {
+    .pokemon-card-wrapper {
+        width: 200px;
+        height: 280px;
+    }
+}
+
+.pokemon-name-container {
+    background: #ffd700;
+    padding: 8px 15px;
+    border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.pokemon-image{
+.pokemon-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+.pokemon-image {
     width: 200px;
     height: 200px;
+    object-fit: contain;
+    background: #1a1a1a;
+    border-radius: 8px;
+    padding: 10px;
+    align-self: center;
 }
 
-.pokemon-types-container{
+.pokemon-types-container {
     display: flex;
-    
+    gap: 10px;
 }
 
-.pokemon-types-container > *:not(:first-child) {
-    margin-left: 10px;
+.type-badge {
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: inset 0 1px 3px rgba(255,255,255,0.3);
+    margin: 2px;
 }
 
-.pokemon-stats-container{
+/* Styles spécifiques par type pour les badges */
+.type-badge.grass, .type-badge.くさ, .type-badge.草, .type-badge.plante {
+    background-color: #3DA224;
+}
+
+.type-badge.poison, .type-badge.どく, .type-badge.毒 {
+    background-color: #923FCC;
+}
+
+.type-badge.fire, .type-badge.ほのお, .type-badge.火, .type-badge.feu {
+    background-color: #E72324;
+}
+
+.type-badge.flying, .type-badge.ひこう, .type-badge.飞行, .type-badge.vol {
+    background-color: #82BAF0;
+}
+
+.type-badge.water, .type-badge.みず, .type-badge.水, .type-badge.eau {
+    background-color: #2481F0;
+}
+
+.type-badge.bug, .type-badge.むし, .type-badge.虫, .type-badge.insecte {
+    background-color: #92A212;
+}
+
+.type-badge.normal, .type-badge.ノーマル, .type-badge.一般 {
+    background-color: #A0A2A0;
+}
+
+.type-badge.electric, .type-badge.でんき, .type-badge.电, .type-badge.électrik {
+    background-color: #FAC100;
+}
+
+.type-badge.ground, .type-badge.じめん, .type-badge.地面, .type-badge.sol {
+    background-color: #92501B;
+}
+
+.type-badge.fairy, .type-badge.フェアリー, .type-badge.妖精, .type-badge.fée {
+    background-color: #EF71F0;
+}
+
+.type-badge.fighting, .type-badge.かくとう, .type-badge.格斗, .type-badge.combat {
+    background-color: #FF8100;
+}
+
+.type-badge.psychic, .type-badge.エスパー, .type-badge.超能力, .type-badge.psy {
+    background-color: #EF3F7A;
+}
+
+.type-badge.rock, .type-badge.いわ, .type-badge.岩石, .type-badge.roche {
+    background-color: #B0AB82;
+}
+
+.type-badge.steel, .type-badge.はがね, .type-badge.钢, .type-badge.acier {
+    background-color: #60A2B9;
+}
+
+.type-badge.ice, .type-badge.こおり, .type-badge.冰, .type-badge.glace {
+    background-color: #3DD9FF;
+}
+
+.type-badge.ghost, .type-badge.ゴースト, .type-badge.幽灵, .type-badge.spectre {
+    background-color: #713F71;
+}
+
+.type-badge.dragon, .type-badge.ドラゴン, .type-badge.龙 {
+    background-color: #4F60E2;
+}
+
+.type-badge.dark, .type-badge.あく, .type-badge.惡, .type-badge.ténèbres {
+    background-color: #4F3F3D;
+}
+
+.pokemon-stats-container {
     display: flex;
     flex-direction: column;
+    gap: 5px;
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.pokemon-stats-container span {
+    color: white;
+    display: flex;
+    justify-content: space-between;
 }
 
 .shiny-button {
@@ -50,3 +493,33 @@
 .shiny-button:hover {
     background-color: #ffed4a;
 }
+
+/* Animation pour le changement de forme */
+.pokemon-card {
+    transition: all 0.3s ease;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+/* Effet de brillance sur le bord doré */
+@keyframes borderGlow {
+    0% { border-color: #ffd700; }
+    50% { border-color: #fff6a3; }
+    100% { border-color: #ffd700; }
+}
+
+.pokemon-card:hover {
+    animation: borderGlow 2s infinite;
+}
+
+/* Effet holographique */
+/*
+.pokemon-card {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+                url('chemin/vers/votre/image/holographic-effect.png');
+    background-blend-mode: overlay;
+}
+*/

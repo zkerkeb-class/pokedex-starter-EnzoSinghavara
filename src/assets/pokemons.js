@@ -9,10 +9,12 @@ const pokemonsList = [{
         "chinese": "妙蛙种子",
         "french": "Bulbizarre"
     },
-    "type": [
-        "Grass",
-        "Poison"
-    ],
+    "type": {
+        "english": ["Grass", "Poison"],
+        "japanese": ["くさ", "どく"],
+        "chinese": ["草", "毒"],
+        "french": ["Plante", "Poison"]
+    },
     "base": {
         "HP": 45,
         "Attack": 49,
@@ -30,10 +32,12 @@ const pokemonsList = [{
         "chinese": "妙蛙草",
         "french": "Herbizarre"
     },
-    "type": [
-        "Grass",
-        "Poison"
-    ],
+    "type": {
+        "english": ["Grass", "Poison"],
+        "japanese": ["くさ", "どく"],
+        "chinese": ["草", "毒"],
+        "french": ["Plante", "Poison"]
+    },
     "base": {
         "HP": 60,
         "Attack": 62,
@@ -51,10 +55,12 @@ const pokemonsList = [{
         "chinese": "妙蛙花",
         "french": "Florizarre"
     },
-    "type": [
-        "Grass",
-        "Poison"
-    ],
+    "type": {
+        "english": ["Grass", "Poison"],
+        "japanese": ["くさ", "どく"],
+        "chinese": ["草", "毒"],
+        "french": ["Plante", "Poison"]
+    },
     "base": {
         "HP": 80,
         "Attack": 82,
@@ -72,9 +78,12 @@ const pokemonsList = [{
         "chinese": "小火龙",
         "french": "Salamèche"
     },
-    "type": [
-        "Fire"
-    ],
+    "type": {
+        "english": ["Fire"],
+        "japanese": ["ほのお"],
+        "chinese": ["火"],
+        "french": ["Feu"]
+    },
     "base": {
         "HP": 39,
         "Attack": 52,
@@ -92,9 +101,12 @@ const pokemonsList = [{
         "chinese": "火恐龙",
         "french": "Reptincel"
     },
-    "type": [
-        "Fire"
-    ],
+    "type": {
+        "english": ["Fire"],
+        "japanese": ["ほのお"],
+        "chinese": ["火"],
+        "french": ["Feu"]
+    },
     "base": {
         "HP": 58,
         "Attack": 64,
@@ -112,10 +124,12 @@ const pokemonsList = [{
         "chinese": "喷火龙",
         "french": "Dracaufeu"
     },
-    "type": [
-        "Fire",
-        "Flying"
-    ],
+    "type": {
+        "english": ["Fire", "Flying"],
+        "japanese": ["ほのお", "ひこう"],
+        "chinese": ["火", "飞行"],
+        "french": ["Feu", "Vol"]
+    },
     "base": {
         "HP": 78,
         "Attack": 84,
@@ -133,9 +147,12 @@ const pokemonsList = [{
         "chinese": "杰尼龟",
         "french": "Carapuce"
     },
-    "type": [
-        "Water"
-    ],
+    "type": {
+        "english": ["Water"],
+        "japanese": ["みず"],
+        "chinese": ["水"],
+        "french": ["Eau"]
+    },
     "base": {
         "HP": 44,
         "Attack": 48,
@@ -153,9 +170,12 @@ const pokemonsList = [{
         "chinese": "卡咪龟",
         "french": "Carabaffe"
     },
-    "type": [
-        "Water"
-    ],
+    "type": {
+        "english": ["Water"],
+        "japanese": ["みず"],
+        "chinese": ["水"],
+        "french": ["Eau"]
+    },
     "base": {
         "HP": 59,
         "Attack": 63,
@@ -173,9 +193,12 @@ const pokemonsList = [{
         "chinese": "水箭龟",
         "french": "Tortank"
     },
-    "type": [
-        "Water"
-    ],
+    "type": {
+        "english": ["Water"],
+        "japanese": ["みず"],
+        "chinese": ["水"],
+        "french": ["Eau"]
+    },
     "base": {
         "HP": 79,
         "Attack": 83,
@@ -193,9 +216,12 @@ const pokemonsList = [{
         "chinese": "绿毛虫",
         "french": "Chenipan"
     },
-    "type": [
-        "Bug"
-    ],
+    "type": {
+        "english": ["Bug"],
+        "japanese": ["むし"],
+        "chinese": ["虫"],
+        "french": ["Insecte"]
+    },
     "base": {
         "HP": 45,
         "Attack": 30,
@@ -213,9 +239,12 @@ const pokemonsList = [{
         "chinese": "铁甲蛹",
         "french": "Chrysacier"
     },
-    "type": [
-        "Bug"
-    ],
+    "type": {
+        "english": ["Bug"],
+        "japanese": ["むし"],
+        "chinese": ["虫"],
+        "french": ["Insecte"]
+    },
     "base": {
         "HP": 50,
         "Attack": 20,
@@ -233,10 +262,12 @@ const pokemonsList = [{
         "chinese": "巴大蝶",
         "french": "Papilusion"
     },
-    "type": [
-        "Bug",
-        "Flying"
-    ],
+    "type": {
+        "english": ["Bug", "Flying"],
+        "japanese": ["むし", "ひこう"],
+        "chinese": ["虫", "飞行"],
+        "french": ["Insecte", "Vol"]
+    },
     "base": {
         "HP": 60,
         "Attack": 45,
@@ -254,10 +285,12 @@ const pokemonsList = [{
         "chinese": "独角虫",
         "french": "Aspicot"
     },
-    "type": [
-        "Bug",
-        "Poison"
-    ],
+    "type": {
+        "english": ["Bug", "Poison"],
+        "japanese": ["むし", "どく"],
+        "chinese": ["虫", "毒"],
+        "french": ["Insecte", "Poison"]
+    },
     "base": {
         "HP": 40,
         "Attack": 35,
@@ -275,10 +308,12 @@ const pokemonsList = [{
         "chinese": "铁壳蛹",
         "french": "Coconfort"
     },
-    "type": [
-        "Bug",
-        "Poison"
-    ],
+    "type": {
+        "english": ["Bug", "Poison"],
+        "japanese": ["むし", "どく"],
+        "chinese": ["虫", "毒"],
+        "french": ["Insecte", "Poison"]
+    },
     "base": {
         "HP": 45,
         "Attack": 25,
@@ -296,10 +331,12 @@ const pokemonsList = [{
         "chinese": "大针蜂",
         "french": "Dardargnan"
     },
-    "type": [
-        "Bug",
-        "Poison"
-    ],
+    "type": {
+        "english": ["Bug", "Poison"],
+        "japanese": ["むし", "どく"],
+        "chinese": ["虫", "毒"],
+        "french": ["Insecte", "Poison"]
+    },
     "base": {
         "HP": 65,
         "Attack": 90,
@@ -317,10 +354,12 @@ const pokemonsList = [{
         "chinese": "波波",
         "french": "Roucool"
     },
-    "type": [
-        "Normal",
-        "Flying"
-    ],
+    "type": {
+        "english": ["Normal", "Flying"],
+        "japanese": ["ノーマル", "ひこう"],
+        "chinese": ["一般", "飞行"],
+        "french": ["Normal", "Vol"]
+    },
     "base": {
         "HP": 40,
         "Attack": 45,
@@ -338,10 +377,12 @@ const pokemonsList = [{
         "chinese": "比比鸟",
         "french": "Roucoups"
     },
-    "type": [
-        "Normal",
-        "Flying"
-    ],
+    "type": {
+        "english": ["Normal", "Flying"],
+        "japanese": ["ノーマル", "ひこう"],
+        "chinese": ["一般", "飞行"],
+        "french": ["Normal", "Vol"]
+    },
     "base": {
         "HP": 63,
         "Attack": 60,
@@ -359,10 +400,12 @@ const pokemonsList = [{
         "chinese": "大比鸟",
         "french": "Roucarnage"
     },
-    "type": [
-        "Normal",
-        "Flying"
-    ],
+    "type": {
+        "english": ["Normal", "Flying"],
+        "japanese": ["ノーマル", "ひこう"],
+        "chinese": ["一般", "飞行"],
+        "french": ["Normal", "Vol"]
+    },
     "base": {
         "HP": 83,
         "Attack": 80,
@@ -380,9 +423,12 @@ const pokemonsList = [{
         "chinese": "小拉达",
         "french": "Rattata"
     },
-    "type": [
-        "Normal"
-    ],
+    "type": {
+        "english": ["Normal"],
+        "japanese": ["ノーマル"],
+        "chinese": ["一般"],
+        "french": ["Normal"]
+    },
     "base": {
         "HP": 30,
         "Attack": 56,
@@ -400,9 +446,12 @@ const pokemonsList = [{
         "chinese": "拉达",
         "french": "Rattatac"
     },
-    "type": [
-        "Normal"
-    ],
+    "type": {
+        "english": ["Normal"],
+        "japanese": ["ノーマル"],
+        "chinese": ["一般"],
+        "french": ["Normal"]
+    },
     "base": {
         "HP": 55,
         "Attack": 81,
@@ -420,10 +469,12 @@ const pokemonsList = [{
         "chinese": "烈雀",
         "french": "Piafabec"
     },
-    "type": [
-        "Normal",
-        "Flying"
-    ],
+    "type": {
+        "english": ["Normal", "Flying"],
+        "japanese": ["ノーマル", "ひこう"],
+        "chinese": ["一般", "飞行"],
+        "french": ["Normal", "Vol"]
+    },
     "base": {
         "HP": 40,
         "Attack": 60,
@@ -441,10 +492,12 @@ const pokemonsList = [{
         "chinese": "大嘴雀",
         "french": "Rapasdepic"
     },
-    "type": [
-        "Normal",
-        "Flying"
-    ],
+    "type": {
+        "english": ["Normal", "Flying"],
+        "japanese": ["ノーマル", "ひこう"],
+        "chinese": ["一般", "飞行"],
+        "french": ["Normal", "Vol"]
+    },
     "base": {
         "HP": 65,
         "Attack": 90,
@@ -462,9 +515,12 @@ const pokemonsList = [{
         "chinese": "阿柏蛇",
         "french": "Abo"
     },
-    "type": [
-        "Poison"
-    ],
+    "type": {
+        "english": ["Poison"],
+        "japanese": ["どく"],
+        "chinese": ["毒"],
+        "french": ["Poison"]
+    },
     "base": {
         "HP": 35,
         "Attack": 60,
@@ -482,9 +538,12 @@ const pokemonsList = [{
         "chinese": "阿柏怪",
         "french": "Arbok"
     },
-    "type": [
-        "Poison"
-    ],
+    "type": {
+        "english": ["Poison"],
+        "japanese": ["どく"],
+        "chinese": ["毒"],
+        "french": ["Poison"]
+    },
     "base": {
         "HP": 60,
         "Attack": 95,
@@ -502,9 +561,12 @@ const pokemonsList = [{
         "chinese": "皮卡丘",
         "french": "Pikachu"
     },
-    "type": [
-        "Electric"
-    ],
+    "type": {
+        "english": ["Electric"],
+        "japanese": ["でんき"],
+        "chinese": ["电"],
+        "french": ["Électrik"]
+    },
     "base": {
         "HP": 35,
         "Attack": 55,
@@ -522,9 +584,12 @@ const pokemonsList = [{
         "chinese": "雷丘",
         "french": "Raichu"
     },
-    "type": [
-        "Electric"
-    ],
+    "type": {
+        "english": ["Electric"],
+        "japanese": ["でんき"],
+        "chinese": ["电"],
+        "french": ["Électrik"]
+    },
     "base": {
         "HP": 60,
         "Attack": 90,
@@ -542,9 +607,12 @@ const pokemonsList = [{
         "chinese": "穿山鼠",
         "french": "Sabelette"
     },
-    "type": [
-        "Ground"
-    ],
+    "type": {
+        "english": ["Ground"],
+        "japanese": ["じめん"],
+        "chinese": ["地面"],
+        "french": ["Sol"]
+    },
     "base": {
         "HP": 50,
         "Attack": 75,
@@ -562,9 +630,12 @@ const pokemonsList = [{
         "chinese": "穿山王",
         "french": "Sablaireau"
     },
-    "type": [
-        "Ground"
-    ],
+    "type": {
+        "english": ["Ground"],
+        "japanese": ["じめん"],
+        "chinese": ["地面"],
+        "french": ["Sol"]
+    },
     "base": {
         "HP": 75,
         "Attack": 100,
@@ -582,9 +653,12 @@ const pokemonsList = [{
         "chinese": "尼多兰",
         "french": "Nidoran♀"
     },
-    "type": [
-        "Poison"
-    ],
+    "type": {
+        "english": ["Poison"],
+        "japanese": ["どく"],
+        "chinese": ["毒"],
+        "french": ["Poison"]
+    },
     "base": {
         "HP": 55,
         "Attack": 47,
@@ -602,9 +676,12 @@ const pokemonsList = [{
         "chinese": "尼多娜",
         "french": "Nidorina"
     },
-    "type": [
-        "Poison"
-    ],
+    "type": {
+        "english": ["Poison"],
+        "japanese": ["どく"],
+        "chinese": ["毒"],
+        "french": ["Poison"]
+    },
     "base": {
         "HP": 70,
         "Attack": 62,
@@ -622,10 +699,12 @@ const pokemonsList = [{
         "chinese": "尼多后",
         "french": "Nidoqueen"
     },
-    "type": [
-        "Poison",
-        "Ground"
-    ],
+    "type": {
+        "english": ["Poison", "Ground"],
+        "japanese": ["どく", "じめん"],
+        "chinese": ["毒", "地面"],
+        "french": ["Poison", "Sol"]
+    },
     "base": {
         "HP": 90,
         "Attack": 92,
@@ -643,9 +722,12 @@ const pokemonsList = [{
         "chinese": "尼多朗",
         "french": "Nidoran♂"
     },
-    "type": [
-        "Poison"
-    ],
+    "type": {
+        "english": ["Poison"],
+        "japanese": ["どく"],
+        "chinese": ["毒"],
+        "french": ["Poison"]
+    },
     "base": {
         "HP": 46,
         "Attack": 57,
@@ -663,9 +745,12 @@ const pokemonsList = [{
         "chinese": "尼多力诺",
         "french": "Nidorino"
     },
-    "type": [
-        "Poison"
-    ],
+    "type": {
+        "english": ["Poison"],
+        "japanese": ["どく"],
+        "chinese": ["毒"],
+        "french": ["Poison"]
+    },
     "base": {
         "HP": 61,
         "Attack": 72,
@@ -683,10 +768,12 @@ const pokemonsList = [{
         "chinese": "尼多王",
         "french": "Nidoking"
     },
-    "type": [
-        "Poison",
-        "Ground"
-    ],
+    "type": {
+        "english": ["Poison", "Ground"],
+        "japanese": ["どく", "じめん"],
+        "chinese": ["毒", "地面"],
+        "french": ["Poison", "Sol"]
+    },
     "base": {
         "HP": 81,
         "Attack": 102,
@@ -704,9 +791,12 @@ const pokemonsList = [{
         "chinese": "皮皮",
         "french": "Mélofée"
     },
-    "type": [
-        "Fairy"
-    ],
+    "type": {
+        "english": ["Fairy"],
+        "japanese": ["フェアリー"],
+        "chinese": ["妖精"],
+        "french": ["Fée"]
+    },
     "base": {
         "HP": 70,
         "Attack": 45,
@@ -724,9 +814,12 @@ const pokemonsList = [{
         "chinese": "皮可西",
         "french": "Mélodelfe"
     },
-    "type": [
-        "Fairy"
-    ],
+    "type": {
+        "english": ["Fairy"],
+        "japanese": ["フェアリー"],
+        "chinese": ["妖精"],
+        "french": ["Fée"]
+    },
     "base": {
         "HP": 95,
         "Attack": 70,
@@ -744,9 +837,12 @@ const pokemonsList = [{
         "chinese": "六尾",
         "french": "Goupix"
     },
-    "type": [
-        "Fire"
-    ],
+    "type": {
+        "english": ["Fire"],
+        "japanese": ["ほのお"],
+        "chinese": ["火"],
+        "french": ["Feu"]
+    },
     "base": {
         "HP": 38,
         "Attack": 41,
@@ -765,7 +861,10 @@ const pokemonsList = [{
         "french": "Feunard"
     },
     "type": [
-        "Fire"
+        "Fire",
+        "ほのお",
+        "火",
+        "Feu"
     ],
     "base": {
         "HP": 73,
@@ -786,7 +885,12 @@ const pokemonsList = [{
     },
     "type": [
         "Normal",
-        "Fairy"
+        "ノーマル",
+        "一般",
+        "Fairy",
+        "フェアリー",
+        "妖精",
+        "Fée"
     ],
     "base": {
         "HP": 115,
@@ -807,7 +911,12 @@ const pokemonsList = [{
     },
     "type": [
         "Normal",
-        "Fairy"
+        "ノーマル",
+        "一般",
+        "Fairy",
+        "フェアリー",
+        "妖精",
+        "Fée"
     ],
     "base": {
         "HP": 140,
@@ -828,7 +937,12 @@ const pokemonsList = [{
     },
     "type": [
         "Poison",
-        "Flying"
+        "どく",
+        "毒",
+        "Flying",
+        "ひこう",
+        "飞行",
+        "Vol"
     ],
     "base": {
         "HP": 40,
@@ -849,7 +963,12 @@ const pokemonsList = [{
     },
     "type": [
         "Poison",
-        "Flying"
+        "どく",
+        "毒",
+        "Flying",
+        "ひこう",
+        "飞行",
+        "Vol"
     ],
     "base": {
         "HP": 75,
@@ -870,7 +989,12 @@ const pokemonsList = [{
     },
     "type": [
         "Grass",
-        "Poison"
+        "くさ",
+        "草",
+        "Plante",
+        "Poison",
+        "どく",
+        "毒"
     ],
     "base": {
         "HP": 45,
@@ -891,7 +1015,12 @@ const pokemonsList = [{
     },
     "type": [
         "Grass",
-        "Poison"
+        "くさ",
+        "草",
+        "Plante",
+        "Poison",
+        "どく",
+        "毒"
     ],
     "base": {
         "HP": 60,
@@ -912,7 +1041,12 @@ const pokemonsList = [{
     },
     "type": [
         "Grass",
-        "Poison"
+        "くさ",
+        "草",
+        "Plante",
+        "Poison",
+        "どく",
+        "毒"
     ],
     "base": {
         "HP": 75,
@@ -933,7 +1067,13 @@ const pokemonsList = [{
     },
     "type": [
         "Bug",
-        "Grass"
+        "むし",
+        "虫",
+        "Insecte",
+        "Grass",
+        "くさ",
+        "草",
+        "Plante",
     ],
     "base": {
         "HP": 35,
@@ -954,7 +1094,13 @@ const pokemonsList = [{
     },
     "type": [
         "Bug",
-        "Grass"
+        "むし",
+        "虫",
+        "Insecte",
+        "Grass",
+        "くさ",
+        "草",
+        "Plante",
     ],
     "base": {
         "HP": 60,
@@ -975,7 +1121,12 @@ const pokemonsList = [{
     },
     "type": [
         "Bug",
-        "Poison"
+        "むし",
+        "虫",
+        "Insecte",
+        "Poison",
+        "どく",
+        "毒"
     ],
     "base": {
         "HP": 60,
@@ -996,7 +1147,12 @@ const pokemonsList = [{
     },
     "type": [
         "Bug",
-        "Poison"
+        "むし",
+        "虫",
+        "Insecte",
+        "Poison",
+        "どく",
+        "毒"
     ],
     "base": {
         "HP": 70,
@@ -1016,7 +1172,10 @@ const pokemonsList = [{
         "french": "Taupiqueur"
     },
     "type": [
-        "Ground"
+        "Ground",
+        "じめん",
+        "地面",
+        "Sol"
     ],
     "base": {
         "HP": 10,
@@ -1036,7 +1195,10 @@ const pokemonsList = [{
         "french": "Triopikeur"
     },
     "type": [
-        "Ground"
+        "Ground",
+        "じめん",
+        "地面",
+        "Sol"
     ],
     "base": {
         "HP": 35,
@@ -1056,7 +1218,9 @@ const pokemonsList = [{
         "french": "Miaouss"
     },
     "type": [
-        "Normal"
+        "Normal",
+        "ノーマル",
+        "一般"
     ],
     "base": {
         "HP": 40,
@@ -1076,7 +1240,9 @@ const pokemonsList = [{
         "french": "Persian"
     },
     "type": [
-        "Normal"
+        "Normal",
+        "ノーマル",
+        "一般"
     ],
     "base": {
         "HP": 65,
@@ -1095,9 +1261,12 @@ const pokemonsList = [{
         "chinese": "可达鸭",
         "french": "Psykokwak"
     },
-    "type": [
-        "Water"
-    ],
+    "type": {
+        "english": ["Water"],
+        "japanese": ["みず"],
+        "chinese": ["水"],
+        "french": ["Eau"]
+    },
     "base": {
         "HP": 50,
         "Attack": 52,
@@ -1115,9 +1284,12 @@ const pokemonsList = [{
         "chinese": "哥达鸭",
         "french": "Akwakwak"
     },
-    "type": [
-        "Water"
-    ],
+    "type": {
+        "english": ["Water"],
+        "japanese": ["みず"],
+        "chinese": ["水"],
+        "french": ["Eau"]
+    },
     "base": {
         "HP": 80,
         "Attack": 82,
@@ -1136,7 +1308,10 @@ const pokemonsList = [{
         "french": "Férosinge"
     },
     "type": [
-        "Fighting"
+        "Fighting",
+        "かくとう",
+        "格斗",
+        "Combat"
     ],
     "base": {
         "HP": 40,
@@ -1156,7 +1331,10 @@ const pokemonsList = [{
         "french": "Colossinge"
     },
     "type": [
-        "Fighting"
+        "Fighting",
+        "かくとう",
+        "格斗",
+        "Combat"
     ],
     "base": {
         "HP": 65,
@@ -1176,7 +1354,10 @@ const pokemonsList = [{
         "french": "Caninos"
     },
     "type": [
-        "Fire"
+        "Fire",
+        "ほのお",
+        "火",
+        "Feu"
     ],
     "base": {
         "HP": 55,
@@ -1196,7 +1377,10 @@ const pokemonsList = [{
         "french": "Arcanin"
     },
     "type": [
-        "Fire"
+        "Fire",
+        "ほのお",
+        "火",
+        "Feu"
     ],
     "base": {
         "HP": 90,
@@ -1215,9 +1399,12 @@ const pokemonsList = [{
         "chinese": "蚊香蝌蚪",
         "french": "Ptitard"
     },
-    "type": [
-        "Water"
-    ],
+    "type": {
+        "english": ["Water"],
+        "japanese": ["みず"],
+        "chinese": ["水"],
+        "french": ["Eau"]
+    },
     "base": {
         "HP": 40,
         "Attack": 50,
@@ -1235,9 +1422,12 @@ const pokemonsList = [{
         "chinese": "蚊香君",
         "french": "Têtarte"
     },
-    "type": [
-        "Water"
-    ],
+    "type": {
+        "english": ["Water"],
+        "japanese": ["みず"],
+        "chinese": ["水"],
+        "french": ["Eau"]
+    },
     "base": {
         "HP": 65,
         "Attack": 65,
@@ -1255,10 +1445,12 @@ const pokemonsList = [{
         "chinese": "蚊香泳士",
         "french": "Tartard"
     },
-    "type": [
-        "Water",
-        "Fighting"
-    ],
+    "type": {
+        "english": ["Water", "Fighting"],
+        "japanese": ["みず", "かくとう"],
+        "chinese": ["水", "格斗"],
+        "french": ["Eau", "Combat"]
+    },
     "base": {
         "HP": 90,
         "Attack": 95,
@@ -1277,7 +1469,10 @@ const pokemonsList = [{
         "french": "Abra"
     },
     "type": [
-        "Psychic"
+        "Psychic",
+        "エスパー",
+        "超能力",
+        "Psy"
     ],
     "base": {
         "HP": 25,
@@ -1297,7 +1492,10 @@ const pokemonsList = [{
         "french": "Kadabra"
     },
     "type": [
-        "Psychic"
+        "Psychic",
+        "エスパー",
+        "超能力",
+        "Psy"
     ],
     "base": {
         "HP": 40,
@@ -1317,7 +1515,10 @@ const pokemonsList = [{
         "french": "Alakazam"
     },
     "type": [
-        "Psychic"
+        "Psychic",
+        "エスパー",
+        "超能力",
+        "Psy"
     ],
     "base": {
         "HP": 55,
@@ -1337,7 +1538,10 @@ const pokemonsList = [{
         "french": "Machoc"
     },
     "type": [
-        "Fighting"
+        "Fighting",
+        "かくとう",
+        "格斗",
+        "Combat"
     ],
     "base": {
         "HP": 70,
@@ -1357,7 +1561,10 @@ const pokemonsList = [{
         "french": "Machopeur"
     },
     "type": [
-        "Fighting"
+        "Fighting",
+        "かくとう",
+        "格斗",
+        "Combat"
     ],
     "base": {
         "HP": 80,
@@ -1377,7 +1584,10 @@ const pokemonsList = [{
         "french": "Mackogneur"
     },
     "type": [
-        "Fighting"
+        "Fighting",
+        "かくとう",
+        "格斗",
+        "Combat"
     ],
     "base": {
         "HP": 90,
@@ -1398,7 +1608,12 @@ const pokemonsList = [{
     },
     "type": [
         "Grass",
-        "Poison"
+        "くさ",
+        "草",
+        "Plante",
+        "Poison",
+        "どく",
+        "毒"
     ],
     "base": {
         "HP": 50,
@@ -1419,7 +1634,12 @@ const pokemonsList = [{
     },
     "type": [
         "Grass",
-        "Poison"
+        "くさ",
+        "草",
+        "Plante",
+        "Poison",
+        "どく",
+        "毒"
     ],
     "base": {
         "HP": 65,
@@ -1440,7 +1660,12 @@ const pokemonsList = [{
     },
     "type": [
         "Grass",
-        "Poison"
+        "くさ",
+        "草",
+        "Plante",
+        "Poison",
+        "どく",
+        "毒"
     ],
     "base": {
         "HP": 80,
@@ -1459,10 +1684,12 @@ const pokemonsList = [{
         "chinese": "玛瑙水母",
         "french": "Tentacool"
     },
-    "type": [
-        "Water",
-        "Poison"
-    ],
+    "type": {
+        "english": ["Water", "Poison"],
+        "japanese": ["みず", "どく"],
+        "chinese": ["水", "毒"],
+        "french": ["Eau", "Poison"]
+    },
     "base": {
         "HP": 40,
         "Attack": 40,
@@ -1480,10 +1707,12 @@ const pokemonsList = [{
         "chinese": "毒刺水母",
         "french": "Tentacruel"
     },
-    "type": [
-        "Water",
-        "Poison"
-    ],
+    "type": {
+        "english": ["Water", "Poison"],
+        "japanese": ["みず", "どく"],
+        "chinese": ["水", "毒"],
+        "french": ["Eau", "Poison"]
+    },
     "base": {
         "HP": 80,
         "Attack": 70,
@@ -1503,7 +1732,13 @@ const pokemonsList = [{
     },
     "type": [
         "Rock",
-        "Ground"
+        "いわ",
+        "岩石",
+        "Roche",
+        "Ground",
+        "じめん",
+        "地面",
+        "Sol"
     ],
     "base": {
         "HP": 40,
@@ -1524,7 +1759,13 @@ const pokemonsList = [{
     },
     "type": [
         "Rock",
-        "Ground"
+        "いわ",
+        "岩石",
+        "Roche",
+        "Ground",
+        "じめん",
+        "地面",
+        "Sol"
     ],
     "base": {
         "HP": 55,
@@ -1545,7 +1786,13 @@ const pokemonsList = [{
     },
     "type": [
         "Rock",
-        "Ground"
+        "いわ",
+        "岩石",
+        "Roche",
+        "Ground",
+        "じめん",
+        "地面",
+        "Sol"
     ],
     "base": {
         "HP": 80,
@@ -1565,7 +1812,10 @@ const pokemonsList = [{
         "french": "Ponyta"
     },
     "type": [
-        "Fire"
+        "Fire",
+        "ほのお",
+        "火",
+        "Feu"
     ],
     "base": {
         "HP": 50,
@@ -1585,7 +1835,10 @@ const pokemonsList = [{
         "french": "Galopa"
     },
     "type": [
-        "Fire"
+        "Fire",
+        "ほのお",
+        "火",
+        "Feu"
     ],
     "base": {
         "HP": 65,
@@ -1604,10 +1857,12 @@ const pokemonsList = [{
         "chinese": "呆呆兽",
         "french": "Ramoloss"
     },
-    "type": [
-        "Water",
-        "Psychic"
-    ],
+    "type": {
+        "english": ["Water", "Psychic"],
+        "japanese": ["みず", "エスパー"],
+        "chinese": ["水", "超能力"],
+        "french": ["Eau", "Psy"]
+    },
     "base": {
         "HP": 90,
         "Attack": 65,
@@ -1625,10 +1880,12 @@ const pokemonsList = [{
         "chinese": "呆壳兽",
         "french": "Flagadoss"
     },
-    "type": [
-        "Water",
-        "Psychic"
-    ],
+    "type": {
+        "english": ["Water", "Psychic"],
+        "japanese": ["みず", "エスパー"],
+        "chinese": ["水", "超能力"],
+        "french": ["Eau", "Psy"]
+    },
     "base": {
         "HP": 95,
         "Attack": 75,
@@ -1648,7 +1905,13 @@ const pokemonsList = [{
     },
     "type": [
         "Electric",
-        "Steel"
+        "でんき",
+        "电",
+        "Électrik",
+        "Steel",
+        "はがね",
+        "钢",
+        "Acier"
     ],
     "base": {
         "HP": 25,
@@ -1669,7 +1932,13 @@ const pokemonsList = [{
     },
     "type": [
         "Electric",
-        "Steel"
+        "でんき",
+        "电",
+        "Électrik",
+        "Steel",
+        "はがね",
+        "钢",
+        "Acier"
     ],
     "base": {
         "HP": 50,
@@ -1690,7 +1959,12 @@ const pokemonsList = [{
     },
     "type": [
         "Normal",
-        "Flying"
+        "ノーマル",
+        "一般",
+        "Flying",
+        "ひこう",
+        "飞行",
+        "Vol"
     ],
     "base": {
         "HP": 52,
@@ -1711,7 +1985,12 @@ const pokemonsList = [{
     },
     "type": [
         "Normal",
-        "Flying"
+        "ノーマル",
+        "一般",
+        "Flying",
+        "ひこう",
+        "飞行",
+        "Vol"
     ],
     "base": {
         "HP": 35,
@@ -1732,7 +2011,12 @@ const pokemonsList = [{
     },
     "type": [
         "Normal",
-        "Flying"
+        "ノーマル",
+        "一般",
+        "Flying",
+        "ひこう",
+        "飞行",
+        "Vol"
     ],
     "base": {
         "HP": 60,
@@ -1751,9 +2035,12 @@ const pokemonsList = [{
         "chinese": "小海狮",
         "french": "Otaria"
     },
-    "type": [
-        "Water"
-    ],
+    "type": {
+        "english": ["Water"],
+        "japanese": ["みず"],
+        "chinese": ["水"],
+        "french": ["Eau"]
+    },
     "base": {
         "HP": 65,
         "Attack": 45,
@@ -1771,10 +2058,12 @@ const pokemonsList = [{
         "chinese": "白海狮",
         "french": "Lamantine"
     },
-    "type": [
-        "Water",
-        "Ice"
-    ],
+    "type": {
+        "english": ["Water", "Ice"],
+        "japanese": ["みず", "こおり"],
+        "chinese": ["水", "冰"],
+        "french": ["Eau", "Glace"]
+    },
     "base": {
         "HP": 90,
         "Attack": 70,
@@ -1793,7 +2082,9 @@ const pokemonsList = [{
         "french": "Tadmorv"
     },
     "type": [
-        "Poison"
+        "Poison",
+        "どく",
+        "毒"
     ],
     "base": {
         "HP": 80,
@@ -1813,7 +2104,9 @@ const pokemonsList = [{
         "french": "Grotadmorv"
     },
     "type": [
-        "Poison"
+        "Poison",
+        "どく",
+        "毒"
     ],
     "base": {
         "HP": 105,
@@ -1832,9 +2125,12 @@ const pokemonsList = [{
         "chinese": "大舌贝",
         "french": "Kokiyas"
     },
-    "type": [
-        "Water"
-    ],
+    "type": {
+        "english": ["Water"],
+        "japanese": ["みず"],
+        "chinese": ["水"],
+        "french": ["Eau"]
+    },
     "base": {
         "HP": 30,
         "Attack": 65,
@@ -1852,10 +2148,12 @@ const pokemonsList = [{
         "chinese": "刺甲贝",
         "french": "Crustabri"
     },
-    "type": [
-        "Water",
-        "Ice"
-    ],
+    "type": {
+        "english": ["Water", "Ice"],
+        "japanese": ["みず", "こおり"],
+        "chinese": ["水", "冰"],
+        "french": ["Eau", "Glace"]
+    },
     "base": {
         "HP": 50,
         "Attack": 95,
@@ -1875,7 +2173,12 @@ const pokemonsList = [{
     },
     "type": [
         "Ghost",
-        "Poison"
+        "ゴースト",
+        "幽灵",
+        "Spectre",
+        "Poison",
+        "どく",
+        "毒"
     ],
     "base": {
         "HP": 30,
@@ -1896,7 +2199,12 @@ const pokemonsList = [{
     },
     "type": [
         "Ghost",
-        "Poison"
+        "ゴースト",
+        "幽灵",
+        "Spectre",
+        "Poison",
+        "どく",
+        "毒"
     ],
     "base": {
         "HP": 45,
@@ -1917,7 +2225,12 @@ const pokemonsList = [{
     },
     "type": [
         "Ghost",
-        "Poison"
+        "ゴースト",
+        "幽灵",
+        "Spectre",
+        "Poison",
+        "どく",
+        "毒"
     ],
     "base": {
         "HP": 60,
@@ -1938,7 +2251,13 @@ const pokemonsList = [{
     },
     "type": [
         "Rock",
-        "Ground"
+        "いわ",
+        "岩石",
+        "Roche",
+        "Ground",
+        "じめん",
+        "地面",
+        "Sol"
     ],
     "base": {
         "HP": 35,
@@ -1958,7 +2277,10 @@ const pokemonsList = [{
         "french": "Soporifik"
     },
     "type": [
-        "Psychic"
+        "Psychic",
+        "エスパー",
+        "超能力",
+        "Psy"
     ],
     "base": {
         "HP": 60,
@@ -1978,7 +2300,10 @@ const pokemonsList = [{
         "french": "Hypnomade"
     },
     "type": [
-        "Psychic"
+        "Psychic",
+        "エスパー",
+        "超能力",
+        "Psy"
     ],
     "base": {
         "HP": 85,
@@ -1997,9 +2322,12 @@ const pokemonsList = [{
         "chinese": "大钳蟹",
         "french": "Krabby"
     },
-    "type": [
-        "Water"
-    ],
+    "type": {
+        "english": ["Water"],
+        "japanese": ["みず"],
+        "chinese": ["水"],
+        "french": ["Eau"]
+    },
     "base": {
         "HP": 30,
         "Attack": 105,
@@ -2017,9 +2345,12 @@ const pokemonsList = [{
         "chinese": "巨钳蟹",
         "french": "Krabboss"
     },
-    "type": [
-        "Water"
-    ],
+    "type": {
+        "english": ["Water"],
+        "japanese": ["みず"],
+        "chinese": ["水"],
+        "french": ["Eau"]
+    },
     "base": {
         "HP": 55,
         "Attack": 130,
@@ -2038,7 +2369,10 @@ const pokemonsList = [{
         "french": "Voltorbe"
     },
     "type": [
-        "Electric"
+        "Electric",
+        "でんき",
+        "电",
+        "Électrik"
     ],
     "base": {
         "HP": 40,
@@ -2058,7 +2392,10 @@ const pokemonsList = [{
         "french": "Électrode"
     },
     "type": [
-        "Electric"
+        "Electric",
+        "でんき",
+        "电",
+        "Électrik"
     ],
     "base": {
         "HP": 60,
@@ -2079,7 +2416,13 @@ const pokemonsList = [{
     },
     "type": [
         "Grass",
-        "Psychic"
+        "くさ",
+        "草",
+        "Plante",
+        "Psychic",
+        "エスパー",
+        "超能力",
+        "Psy"
     ],
     "base": {
         "HP": 60,
@@ -2100,7 +2443,13 @@ const pokemonsList = [{
     },
     "type": [
         "Grass",
-        "Psychic"
+        "くさ",
+        "草",
+        "Plante",
+        "Psychic",
+        "エスパー",
+        "超能力",
+        "Psy"
     ],
     "base": {
         "HP": 95,
@@ -2120,7 +2469,10 @@ const pokemonsList = [{
         "french": "Osselait"
     },
     "type": [
-        "Ground"
+        "Ground",
+        "じめん",
+        "地面",
+        "Sol"
     ],
     "base": {
         "HP": 50,
@@ -2140,7 +2492,10 @@ const pokemonsList = [{
         "french": "Ossatueur"
     },
     "type": [
-        "Ground"
+        "Ground",
+        "じめん",
+        "地面",
+        "Sol"
     ],
     "base": {
         "HP": 60,
@@ -2160,7 +2515,10 @@ const pokemonsList = [{
         "french": "Kicklee"
     },
     "type": [
-        "Fighting"
+        "Fighting",
+        "かくとう",
+        "格斗",
+        "Combat"
     ],
     "base": {
         "HP": 50,
@@ -2180,7 +2538,10 @@ const pokemonsList = [{
         "french": "Tygnon"
     },
     "type": [
-        "Fighting"
+        "Fighting",
+        "かくとう",
+        "格斗",
+        "Combat"
     ],
     "base": {
         "HP": 50,
@@ -2200,7 +2561,9 @@ const pokemonsList = [{
         "french": "Excelangue"
     },
     "type": [
-        "Normal"
+        "Normal",
+        "ノーマル",
+        "一般"
     ],
     "base": {
         "HP": 90,
@@ -2220,7 +2583,9 @@ const pokemonsList = [{
         "french": "Smogo"
     },
     "type": [
-        "Poison"
+        "Poison",
+        "どく",
+        "毒"
     ],
     "base": {
         "HP": 40,
@@ -2240,7 +2605,9 @@ const pokemonsList = [{
         "french": "Smogogo"
     },
     "type": [
-        "Poison"
+        "Poison",
+        "どく",
+        "毒"
     ],
     "base": {
         "HP": 65,
@@ -2261,7 +2628,13 @@ const pokemonsList = [{
     },
     "type": [
         "Ground",
-        "Rock"
+        "じめん",
+        "地面",
+        "Sol",
+        "Rock",
+        "いわ",
+        "岩石",
+        "Roche"
     ],
     "base": {
         "HP": 80,
@@ -2282,7 +2655,13 @@ const pokemonsList = [{
     },
     "type": [
         "Ground",
-        "Rock"
+        "じめん",
+        "地面",
+        "Sol",
+        "Rock",
+        "いわ",
+        "岩石",
+        "Roche"
     ],
     "base": {
         "HP": 105,
@@ -2302,7 +2681,9 @@ const pokemonsList = [{
         "french": "Leveinard"
     },
     "type": [
-        "Normal"
+        "Normal",
+        "ノーマル",
+        "一般"
     ],
     "base": {
         "HP": 250,
@@ -2322,7 +2703,10 @@ const pokemonsList = [{
         "french": "Saquedeneu"
     },
     "type": [
-        "Grass"
+        "Grass",
+        "くさ",
+        "草",
+        "Plante"
     ],
     "base": {
         "HP": 65,
@@ -2342,7 +2726,9 @@ const pokemonsList = [{
         "french": "Kangourex"
     },
     "type": [
-        "Normal"
+        "Normal",
+        "ノーマル",
+        "一般"
     ],
     "base": {
         "HP": 105,
@@ -2361,9 +2747,12 @@ const pokemonsList = [{
         "chinese": "墨海马",
         "french": "Hypotrempe"
     },
-    "type": [
-        "Water"
-    ],
+    "type": {
+        "english": ["Water"],
+        "japanese": ["みず"],
+        "chinese": ["水"],
+        "french": ["Eau"]
+    },
     "base": {
         "HP": 30,
         "Attack": 40,
@@ -2381,9 +2770,12 @@ const pokemonsList = [{
         "chinese": "海刺龙",
         "french": "Hypocéan"
     },
-    "type": [
-        "Water"
-    ],
+    "type": {
+        "english": ["Water"],
+        "japanese": ["みず"],
+        "chinese": ["水"],
+        "french": ["Eau"]
+    },
     "base": {
         "HP": 55,
         "Attack": 65,
@@ -2401,9 +2793,12 @@ const pokemonsList = [{
         "chinese": "角金鱼",
         "french": "Poissirène"
     },
-    "type": [
-        "Water"
-    ],
+    "type": {
+        "english": ["Water"],
+        "japanese": ["みず"],
+        "chinese": ["水"],
+        "french": ["Eau"]
+    },
     "base": {
         "HP": 45,
         "Attack": 67,
@@ -2421,9 +2816,12 @@ const pokemonsList = [{
         "chinese": "金鱼王",
         "french": "Poissoroy"
     },
-    "type": [
-        "Water"
-    ],
+    "type": {
+        "english": ["Water"],
+        "japanese": ["みず"],
+        "chinese": ["水"],
+        "french": ["Eau"]
+    },
     "base": {
         "HP": 80,
         "Attack": 92,
@@ -2441,9 +2839,12 @@ const pokemonsList = [{
         "chinese": "海星星",
         "french": "Stari"
     },
-    "type": [
-        "Water"
-    ],
+    "type": {
+        "english": ["Water"],
+        "japanese": ["みず"],
+        "chinese": ["水"],
+        "french": ["Eau"]
+    },
     "base": {
         "HP": 30,
         "Attack": 45,
@@ -2461,10 +2862,12 @@ const pokemonsList = [{
         "chinese": "宝石海星",
         "french": "Staross"
     },
-    "type": [
-        "Water",
-        "Psychic"
-    ],
+    "type": {
+        "english": ["Water", "Psychic"],
+        "japanese": ["みず", "エスパー"],
+        "chinese": ["水", "超能力"],
+        "french": ["Eau", "Psy"]
+    },
     "base": {
         "HP": 60,
         "Attack": 75,
@@ -2484,7 +2887,13 @@ const pokemonsList = [{
     },
     "type": [
         "Psychic",
-        "Fairy"
+        "エスパー",
+        "超能力",
+        "Psy",
+        "Fairy",
+        "フェアリー",
+        "妖精",
+        "Fée"
     ],
     "base": {
         "HP": 40,
@@ -2505,7 +2914,13 @@ const pokemonsList = [{
     },
     "type": [
         "Bug",
-        "Flying"
+        "むし",
+        "虫",
+        "Insecte",
+        "Flying",
+        "ひこう",
+        "飞行",
+        "Vol"
     ],
     "base": {
         "HP": 70,
@@ -2526,7 +2941,13 @@ const pokemonsList = [{
     },
     "type": [
         "Ice",
-        "Psychic"
+        "こおり",
+        "冰",
+        "Glace",
+        "Psychic",
+        "エスパー",
+        "超能力",
+        "Psy"
     ],
     "base": {
         "HP": 65,
@@ -2546,7 +2967,10 @@ const pokemonsList = [{
         "french": "Élektek"
     },
     "type": [
-        "Electric"
+        "Electric",
+        "でんき",
+        "电",
+        "Électrik"
     ],
     "base": {
         "HP": 65,
@@ -2566,7 +2990,10 @@ const pokemonsList = [{
         "french": "Magmar"
     },
     "type": [
-        "Fire"
+        "Fire",
+        "ほのお",
+        "火",
+        "Feu"
     ],
     "base": {
         "HP": 65,
@@ -2586,7 +3013,10 @@ const pokemonsList = [{
         "french": "Scarabrute"
     },
     "type": [
-        "Bug"
+        "Bug",
+        "むし",
+        "虫",
+        "Insecte"
     ],
     "base": {
         "HP": 65,
@@ -2606,7 +3036,9 @@ const pokemonsList = [{
         "french": "Tauros"
     },
     "type": [
-        "Normal"
+        "Normal",
+        "ノーマル",
+        "一般"
     ],
     "base": {
         "HP": 75,
@@ -2625,9 +3057,12 @@ const pokemonsList = [{
         "chinese": "鲤鱼王",
         "french": "Magicarpe"
     },
-    "type": [
-        "Water"
-    ],
+    "type": {
+        "english": ["Water"],
+        "japanese": ["みず"],
+        "chinese": ["水"],
+        "french": ["Eau"]
+    },
     "base": {
         "HP": 20,
         "Attack": 10,
@@ -2645,10 +3080,12 @@ const pokemonsList = [{
         "chinese": "暴鲤龙",
         "french": "Léviator"
     },
-    "type": [
-        "Water",
-        "Flying"
-    ],
+    "type": {
+        "english": ["Water", "Flying"],
+        "japanese": ["みず", "ひこう"],
+        "chinese": ["水", "飞行"],
+        "french": ["Eau", "Vol"]
+    },
     "base": {
         "HP": 95,
         "Attack": 125,
@@ -2666,10 +3103,12 @@ const pokemonsList = [{
         "chinese": "拉普拉斯",
         "french": "Lokhlass"
     },
-    "type": [
-        "Water",
-        "Ice"
-    ],
+    "type": {
+        "english": ["Water", "Ice"],
+        "japanese": ["みず", "こおり"],
+        "chinese": ["水", "冰"],
+        "french": ["Eau", "Glace"]
+    },
     "base": {
         "HP": 130,
         "Attack": 85,
@@ -2688,7 +3127,9 @@ const pokemonsList = [{
         "french": "Métamorph"
     },
     "type": [
-        "Normal"
+        "Normal",
+        "ノーマル",
+        "一般"
     ],
     "base": {
         "HP": 48,
@@ -2708,7 +3149,9 @@ const pokemonsList = [{
         "french": "Évoli"
     },
     "type": [
-        "Normal"
+        "Normal",
+        "ノーマル",
+        "一般"
     ],
     "base": {
         "HP": 55,
@@ -2727,9 +3170,12 @@ const pokemonsList = [{
         "chinese": "水伊布",
         "french": "Aquali"
     },
-    "type": [
-        "Water"
-    ],
+    "type": {
+        "english": ["Water"],
+        "japanese": ["みず"],
+        "chinese": ["水"],
+        "french": ["Eau"]
+    },
     "base": {
         "HP": 130,
         "Attack": 65,
@@ -2748,7 +3194,10 @@ const pokemonsList = [{
         "french": "Voltali"
     },
     "type": [
-        "Electric"
+        "Electric",
+        "でんき",
+        "电",
+        "Électrik"
     ],
     "base": {
         "HP": 65,
@@ -2768,7 +3217,10 @@ const pokemonsList = [{
         "french": "Pyroli"
     },
     "type": [
-        "Fire"
+        "Fire",
+        "ほのお",
+        "火",
+        "Feu"
     ],
     "base": {
         "HP": 65,
@@ -2788,7 +3240,9 @@ const pokemonsList = [{
         "french": "Porygon"
     },
     "type": [
-        "Normal"
+        "Normal",
+        "ノーマル",
+        "一般"
     ],
     "base": {
         "HP": 65,
@@ -2807,10 +3261,12 @@ const pokemonsList = [{
         "chinese": "菊石兽",
         "french": "Amonita"
     },
-    "type": [
-        "Rock",
-        "Water"
-    ],
+    "type": {
+        "english": ["Rock", "Water"],
+        "japanese": ["いわ", "みず"],
+        "chinese": ["岩石", "水"],
+        "french": ["Roche", "Eau"]
+    },
     "base": {
         "HP": 35,
         "Attack": 40,
@@ -2828,10 +3284,12 @@ const pokemonsList = [{
         "chinese": "多刺菊石兽",
         "french": "Amonistar"
     },
-    "type": [
-        "Rock",
-        "Water"
-    ],
+    "type": {
+        "english": ["Rock", "Water"],
+        "japanese": ["いわ", "みず"],
+        "chinese": ["岩石", "水"],
+        "french": ["Roche", "Eau"]
+    },
     "base": {
         "HP": 70,
         "Attack": 60,
@@ -2849,10 +3307,12 @@ const pokemonsList = [{
         "chinese": "化石盔",
         "french": "Kabuto"
     },
-    "type": [
-        "Rock",
-        "Water"
-    ],
+    "type": {
+        "english": ["Rock", "Water"],
+        "japanese": ["いわ", "みず"],
+        "chinese": ["岩石", "水"],
+        "french": ["Roche", "Eau"]
+    },
     "base": {
         "HP": 30,
         "Attack": 80,
@@ -2870,10 +3330,12 @@ const pokemonsList = [{
         "chinese": "镰刀盔",
         "french": "Kabutops"
     },
-    "type": [
-        "Rock",
-        "Water"
-    ],
+    "type": {
+        "english": ["Rock", "Water"],
+        "japanese": ["いわ", "みず"],
+        "chinese": ["岩石", "水"],
+        "french": ["Roche", "Eau"]
+    },
     "base": {
         "HP": 60,
         "Attack": 115,
@@ -2893,7 +3355,13 @@ const pokemonsList = [{
     },
     "type": [
         "Rock",
-        "Flying"
+        "いわ",
+        "岩石",
+        "Roche",
+        "Flying",
+        "ひこう",
+        "飞行",
+        "Vol"
     ],
     "base": {
         "HP": 80,
@@ -2913,7 +3381,9 @@ const pokemonsList = [{
         "french": "Ronflex"
     },
     "type": [
-        "Normal"
+        "Normal",
+        "ノーマル",
+        "一般"
     ],
     "base": {
         "HP": 160,
@@ -2934,7 +3404,13 @@ const pokemonsList = [{
     },
     "type": [
         "Ice",
-        "Flying"
+        "こおり",
+        "冰",
+        "Glace",
+        "Flying",
+        "ひこう",
+        "飞行",
+        "Vol"
     ],
     "base": {
         "HP": 90,
@@ -2955,7 +3431,13 @@ const pokemonsList = [{
     },
     "type": [
         "Electric",
-        "Flying"
+        "でんき",
+        "电",
+        "Électrik",
+        "Flying",
+        "ひこう",
+        "飞行",
+        "Vol"
     ],
     "base": {
         "HP": 90,
@@ -2976,7 +3458,13 @@ const pokemonsList = [{
     },
     "type": [
         "Fire",
-        "Flying"
+        "ほのお",
+        "火",
+        "Feu",
+        "Flying",
+        "ひこう",
+        "飞行",
+        "Vol"
     ],
     "base": {
         "HP": 90,
@@ -2996,7 +3484,9 @@ const pokemonsList = [{
         "french": "Minidraco"
     },
     "type": [
-        "Dragon"
+        "Dragon",
+        "ドラゴン",
+        "龙"
     ],
     "base": {
         "HP": 41,
@@ -3016,7 +3506,9 @@ const pokemonsList = [{
         "french": "Draco"
     },
     "type": [
-        "Dragon"
+        "Dragon",
+        "ドラゴン",
+        "龙"
     ],
     "base": {
         "HP": 61,
@@ -3037,7 +3529,12 @@ const pokemonsList = [{
     },
     "type": [
         "Dragon",
-        "Flying"
+        "ドラゴン",
+        "龙",
+        "Flying",
+        "ひこう",
+        "飞行",
+        "Vol"
     ],
     "base": {
         "HP": 91,
@@ -3057,7 +3554,10 @@ const pokemonsList = [{
         "french": "Mewtwo"
     },
     "type": [
-        "Psychic"
+        "Psychic",
+        "エスパー",
+        "超能力",
+        "Psy"
     ],
     "base": {
         "HP": 106,
@@ -3077,7 +3577,10 @@ const pokemonsList = [{
         "french": "Mew"
     },
     "type": [
-        "Psychic"
+        "Psychic",
+        "エスパー",
+        "超能力",
+        "Psy"
     ],
     "base": {
         "HP": 100,

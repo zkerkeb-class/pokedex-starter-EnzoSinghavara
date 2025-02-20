@@ -31,12 +31,13 @@ function App() {
             <div key={pokemon.id} className="pokemon-card-container">
               <PokemonCard 
                 name={pokemon.name[currentLanguage]} 
-                types={pokemon.type} 
+                types={pokemon.type}
                 image={pokemon.image}
                 imageShiny={pokemon.imageShiny}
                 attack={pokemon.base.Attack}
                 defense={pokemon.base.Defense}
                 hp={pokemon.base.HP}
+                currentLanguage={currentLanguage}
               />
             </div>
           ))}
