@@ -1,53 +1,251 @@
 .header {
     background-color: #1a1a1a;
-    padding: 1rem 2rem;
+    width: 100%;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre le contenu */
 }
 
-.header-content {
+/* Grille principale du header */
+.header-top {
+    width: 100%;
+    max-width: 1800px; /* Limite la largeur max */
+    padding: 1rem 2rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    box-sizing: border-box;
+}
+
+/* Section titre - bordure rouge */
+.title-section {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0; /* Coller au bord gauche */
 }
 
 .header h1 {
     margin: 0;
     color: white;
     font-size: 2.5rem;
+    white-space: nowrap;
 }
 
-.language-selector {
+/* Section recherche - bordure bleue */
+.search-section {
+    flex: 2;
+    max-width: 800px; /* Limite la largeur maximale */
+    min-width: 300px; /* Largeur minimum */
     display: flex;
-    gap: 0.5rem;
+    justify-content: center;
+    padding: 0 2rem;
 }
 
-.language-button {
-    padding: 0.5rem 1rem;
+.search-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.8rem 1.2rem;
     border: none;
     border-radius: 8px;
     background: #333;
     color: white;
+    font-size: 1rem;
+}
+
+.search-input::placeholder {
+    color: #888;
+}
+
+/* Section langues - bordure verte */
+.language-section {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0; /* Coller au bord droit */
+    gap: 0.5rem;
+}
+
+.language-button {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background: #333;
     cursor: pointer;
     transition: all 0.2s ease;
-    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .language-button:hover {
     background: #444;
+    transform: translateY(-2px);
 }
 
 .language-button.active {
-    background: #666;
+    border-color: #58cc02; /* Couleur verte style Duolingo */
+    background: #42921a;
 }
 
-@media (max-width: 600px) {
-    .header-content {
+.flag-icon {
+    width: 32px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.header-bottom {
+    padding: 1rem 2rem;
+    background-color: #242424;
+    position: relative;
+}
+
+/* Bouton debug simplifié */
+.debug-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #333;
+    border: 2px solid #444;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.debug-button::before {
+    content: "⚪";
+}
+
+.debug-button.active::before {
+    content: "⚫";
+}
+
+.debug-button:hover {
+    transform: scale(1.1);
+    background: #444;
+}
+
+/* Styles des contours en mode debug */
+.show-borders .header {
+    border: 3px dashed purple;
+}
+
+.show-borders .header-top {
+    border: 3px dashed yellow;
+}
+
+.show-borders .title-section {
+    border: 2px solid red;
+}
+
+.show-borders .search-section {
+    border: 2px solid blue;
+}
+
+.show-borders .language-section {
+    border: 2px solid green;
+}
+
+.show-borders .header-bottom {
+    border: 3px dashed orange;
+}
+
+.show-borders .type-filters {
+    border: 2px solid purple;
+}
+
+.show-borders .type-buttons-container {
+    border: 2px solid cyan;
+}
+
+@media (max-width: 1400px) {
+    .header-top {
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header-top {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-top {
+        padding: 1rem;
+    }
+
+    .search-section {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-top {
         flex-direction: column;
         gap: 1rem;
     }
-    
-    .language-selector {
-        flex-wrap: wrap;
+
+    .title-section,
+    .search-section,
+    .language-section {
+        width: 100%;
         justify-content: center;
     }
-} 
+
+    .search-section {
+        order: 2;
+    }
+
+    .language-section {
+        order: 1;
+    }
+
+    .pokemon-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-top {
+        padding: 1rem;
+    }
+
+    .pokemon-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Conteneur principal des cartes Pokémon */
+.pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 5%;
+    width: 100%;
+}
+
+/* Ajustement du header pour les très grands écrans */
+@media screen and (min-width: 2600px) {
+    .header-top {
+        padding: 1rem calc((100% - 2400px) / 2); /* Centre dynamiquement */
+    }
+}

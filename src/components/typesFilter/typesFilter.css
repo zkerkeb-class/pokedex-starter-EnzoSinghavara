@@ -1,0 +1,107 @@
+.type-filters {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.type-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.type-button {
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.type-button.selected {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.type-icon {
+    width: 100px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.reset-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    opacity: 0.7;
+    z-index: 1000;
+}
+
+.reset-button.active {
+    background-color: #ff3b3b;
+    opacity: 1;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Ajustement des media queries pour la responsivité */
+@media (max-width: 1200px) {
+    .type-buttons-container {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .type-buttons-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    
+    .type-button {
+        width: 100px;
+        height: 40px;
+    }
+    
+    .reset-button {
+        bottom: 1rem;
+        right: 1rem;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+.type-button:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.15);
+}

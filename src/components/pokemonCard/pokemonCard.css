@@ -15,22 +15,23 @@
 }
 
 .pokemon-card {
-    width: 250px;
-    padding: 10px;
-    border-radius: 8px;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 12px;
     background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin: 20px;
     position: relative;
     transition: transform 0.3s ease;
 }
 
 .pokemon-card:hover {
-    transform: scale(1.05) rotateY(10deg);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 /*
@@ -68,7 +69,7 @@
 
 /* Styles spécifiques par type */
 /* Grass */
-.pokemon-card[data-type="grass"] {
+.pokemon-card[data-type="GRASS"] {
     border: 2px solid #3DA224;
 }
 .pokemon-card[data-type="くさ"] {
@@ -77,12 +78,12 @@
 .pokemon-card[data-type="草"] {
     border: 2px solid #3DA224;
 }
-.pokemon-card[data-type="plante"] {
+.pokemon-card[data-type="PLANTE"] {
     border: 2px solid #3DA224;
 }
 
 /* Poison */
-.pokemon-card[data-type="poison"] {
+.pokemon-card[data-type="POISON"] {
     border: 2px solid #923FCC;
 }
 .pokemon-card[data-type="どく"] {
@@ -93,7 +94,7 @@
 }
 
 /* Fire */
-.pokemon-card[data-type="fire"] {
+.pokemon-card[data-type="FIRE"] {
     border: 2px solid #E72324;
 }
 .pokemon-card[data-type="ほのお"] {
@@ -102,12 +103,12 @@
 .pokemon-card[data-type="火"] {
     border: 2px solid #E72324;
 }
-.pokemon-card[data-type="feu"] {
+.pokemon-card[data-type="FEU"] {
     border: 2px solid #E72324;
 }
 
 /* Flying */
-.pokemon-card[data-type="flying"] {
+.pokemon-card[data-type="FLYING"] {
     border: 2px solid #82BAF0;
 }
 .pokemon-card[data-type="ひこう"] {
@@ -116,12 +117,12 @@
 .pokemon-card[data-type="飞行"] {
     border: 2px solid #82BAF0;
 }
-.pokemon-card[data-type="vol"] {
+.pokemon-card[data-type="VOL"] {
     border: 2px solid #82BAF0;
 }
 
 /* Water */
-.pokemon-card[data-type="water"] {
+.pokemon-card[data-type="WATER"] {
     border: 2px solid #2481F0;
 }
 .pokemon-card[data-type="みず"] {
@@ -130,12 +131,12 @@
 .pokemon-card[data-type="水"] {
     border: 2px solid #2481F0;
 }
-.pokemon-card[data-type="eau"] {
+.pokemon-card[data-type="EAU"] {
     border: 2px solid #2481F0;
 }
 
 /* Bug */
-.pokemon-card[data-type="bug"] {
+.pokemon-card[data-type="BUG"] {
     border: 2px solid #92A212;
 }
 .pokemon-card[data-type="むし"] {
@@ -144,12 +145,12 @@
 .pokemon-card[data-type="虫"] {
     border: 2px solid #92A212;
 }
-.pokemon-card[data-type="insecte"] {
+.pokemon-card[data-type="INSECTE"] {
     border: 2px solid #92A212;
 }
 
 /* Normal */
-.pokemon-card[data-type="normal"] {
+.pokemon-card[data-type="NORMAL"] {
     border: 2px solid #A0A2A0;
 }
 .pokemon-card[data-type="ノーマル"] {
@@ -160,7 +161,7 @@
 }
 
 /* Electric */
-.pokemon-card[data-type="electric"] {
+.pokemon-card[data-type="ELECTRIC"] {
     border: 2px solid #FAC100;
 }
 .pokemon-card[data-type="でんき"] {
@@ -169,12 +170,12 @@
 .pokemon-card[data-type="电"] {
     border: 2px solid #FAC100;
 }
-.pokemon-card[data-type="électrik"] {
+.pokemon-card[data-type="ÉLECTRIK"] {
     border: 2px solid #FAC100;
 }
 
 /* Ground */
-.pokemon-card[data-type="ground"] {
+.pokemon-card[data-type="GROUND"] {
     border: 2px solid #92501B;
 }
 .pokemon-card[data-type="じめん"] {
@@ -183,12 +184,12 @@
 .pokemon-card[data-type="地面"] {
     border: 2px solid #92501B;
 }
-.pokemon-card[data-type="Sol"] {
+.pokemon-card[data-type="SOL"] {
     border: 2px solid #92501B;
 }
 
 /* Fairy */
-.pokemon-card[data-type="fairy"] {
+.pokemon-card[data-type="FAIRY"] {
     border: 2px solid #EF71F0;
 }
 .pokemon-card[data-type="フェアリー"] {
@@ -197,12 +198,12 @@
 .pokemon-card[data-type="妖精"] {
     border: 2px solid #EF71F0;
 }
-.pokemon-card[data-type="fée"] {
+.pokemon-card[data-type="FÉE"] {
     border: 2px solid #EF71F0;
 }
 
 /* Fighting */
-.pokemon-card[data-type="fighting"] {
+.pokemon-card[data-type="FIGHTING"] {
     border: 2px solid #FF8100;
 }
 .pokemon-card[data-type="かくとう"] {
@@ -211,12 +212,12 @@
 .pokemon-card[data-type="格斗"] {
     border: 2px solid #FF8100;
 }
-.pokemon-card[data-type="combat"] {
+.pokemon-card[data-type="COMBAT"] {
     border: 2px solid #FF8100;
 }
 
 /* Psychic */
-.pokemon-card[data-type="psychic"] {
+.pokemon-card[data-type="PSYCHIC"] {
     border: 2px solid #EF3F7A;
 }
 .pokemon-card[data-type="エスパー"] {
@@ -225,12 +226,12 @@
 .pokemon-card[data-type="超能力"] {
     border: 2px solid #EF3F7A;
 }
-.pokemon-card[data-type="psy"] {
+.pokemon-card[data-type="PSY"] {
     border: 2px solid #EF3F7A;
 }
 
 /* Rock */
-.pokemon-card[data-type="rock"] {
+.pokemon-card[data-type="ROCK"] {
     border: 2px solid #B0AB82;
 }
 .pokemon-card[data-type="いわ"] {
@@ -239,12 +240,12 @@
 .pokemon-card[data-type="岩石"] {
     border: 2px solid #B0AB82;
 }
-.pokemon-card[data-type="roche"] {
+.pokemon-card[data-type="ROCHE"] {
     border: 2px solid #B0AB82;
 }
 
 /* Steel */
-.pokemon-card[data-type="steel"] {
+.pokemon-card[data-type="STEEL"] {
     border: 2px solid #60A2B9;
 }
 .pokemon-card[data-type="はがね"] {
@@ -253,12 +254,12 @@
 .pokemon-card[data-type="钢"] {
     border: 2px solid #60A2B9;
 }
-.pokemon-card[data-type="acier"] {
+.pokemon-card[data-type="ACIER"] {
     border: 2px solid #60A2B9;
 }
 
 /* Ice */
-.pokemon-card[data-type="ice"] {
+.pokemon-card[data-type="ICE"] {
     border: 2px solid #3DD9FF;
 }
 .pokemon-card[data-type="こおり"] {
@@ -267,12 +268,12 @@
 .pokemon-card[data-type="冰"] {
     border: 2px solid #3DD9FF;
 }
-.pokemon-card[data-type="glace"] {
+.pokemon-card[data-type="GLACE"] {
     border: 2px solid #3DD9FF;
 }
 
 /* Ghost */
-.pokemon-card[data-type="ghost"] {
+.pokemon-card[data-type="GHOST"] {
     border: 2px solid #713F71;
 }
 .pokemon-card[data-type="ゴースト"] {
@@ -281,12 +282,12 @@
 .pokemon-card[data-type="幽灵"] {
     border: 2px solid #713F71;
 }
-.pokemon-card[data-type="spectre"] {
+.pokemon-card[data-type="SPECTRE"] {
     border: 2px solid #713F71;
 }
 
 /* Dragon */
-.pokemon-card[data-type="dragon"] {
+.pokemon-card[data-type="DRAGON"] {
     border: 2px solid #4F60E2;
 }
 .pokemon-card[data-type="ドラゴン"] {
@@ -297,16 +298,16 @@
 }
 
 /* Dark */
-.pokemon-card[data-type="dark"] {
+.pokemon-card[data-type="DARK"] {
     border: 2px solid #4F3F3D;
 }
 .pokemon-card[data-type="あく"] {
     border: 2px solid #4F3F3D;
 }
-.pokemon-card[data-type="惡"] {
+.pokemon-card[data-type="恶"] {
     border: 2px solid #4F3F3D;
 }
-.pokemon-card[data-type="ténèbres"] {
+.pokemon-card[data-type="TÉNÈBRES"] {
     border: 2px solid #4F3F3D;
 }
 
@@ -381,87 +382,110 @@
     gap: 10px;
 }
 
+.pokemon-types {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+
 .type-badge {
-    padding: 5px 12px;
-    border-radius: 15px;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: white;
-    box-shadow: inset 0 1px 3px rgba(255,255,255,0.3);
-    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 8px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100px;  /* Largeur fixe pour tous les badges */
+    height: 32px;  /* Hauteur fixe pour tous les badges */
+}
+
+.type-icon {
+    width: 90px;
+    height: 24px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Ajout d'un effet de hover subtil */
+.type-badge:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+    transition: all 0.2s ease;
 }
 
 /* Styles spécifiques par type pour les badges */
-.type-badge.grass, .type-badge.くさ, .type-badge.草, .type-badge.plante {
+.type-badge.GRASS, .type-badge.くさ, .type-badge.草, .type-badge.PLANTE {
     background-color: #3DA224;
 }
 
-.type-badge.poison, .type-badge.どく, .type-badge.毒 {
+.type-badge.POISON, .type-badge.どく, .type-badge.毒 {
     background-color: #923FCC;
 }
 
-.type-badge.fire, .type-badge.ほのお, .type-badge.火, .type-badge.feu {
+.type-badge.FIRE, .type-badge.ほのお, .type-badge.火, .type-badge.FEU {
     background-color: #E72324;
 }
 
-.type-badge.flying, .type-badge.ひこう, .type-badge.飞行, .type-badge.vol {
+.type-badge.FLYING, .type-badge.ひこう, .type-badge.飞行, .type-badge.VOL {
     background-color: #82BAF0;
 }
 
-.type-badge.water, .type-badge.みず, .type-badge.水, .type-badge.eau {
+.type-badge.WATER, .type-badge.みず, .type-badge.水, .type-badge.EAU {
     background-color: #2481F0;
 }
 
-.type-badge.bug, .type-badge.むし, .type-badge.虫, .type-badge.insecte {
+.type-badge.BUG, .type-badge.むし, .type-badge.虫, .type-badge.INSECTE {
     background-color: #92A212;
 }
 
-.type-badge.normal, .type-badge.ノーマル, .type-badge.一般 {
+.type-badge.NORMAL, .type-badge.ノーマル, .type-badge.一般 {
     background-color: #A0A2A0;
 }
 
-.type-badge.electric, .type-badge.でんき, .type-badge.电, .type-badge.électrik {
+.type-badge.ELECTRIC, .type-badge.でんき, .type-badge.电, .type-badge.ÉLECTRIK {
     background-color: #FAC100;
 }
 
-.type-badge.ground, .type-badge.じめん, .type-badge.地面, .type-badge.sol {
+.type-badge.GROUND, .type-badge.じめん, .type-badge.地面, .type-badge.SOL {
     background-color: #92501B;
 }
 
-.type-badge.fairy, .type-badge.フェアリー, .type-badge.妖精, .type-badge.fée {
+.type-badge.FAIRY, .type-badge.フェアリー, .type-badge.妖精, .type-badge.FÉE {
     background-color: #EF71F0;
 }
 
-.type-badge.fighting, .type-badge.かくとう, .type-badge.格斗, .type-badge.combat {
+.type-badge.FIGHTING, .type-badge.かくとう, .type-badge.格斗, .type-badge.COMBAT {
     background-color: #FF8100;
 }
 
-.type-badge.psychic, .type-badge.エスパー, .type-badge.超能力, .type-badge.psy {
+.type-badge.PSYCHIC, .type-badge.エスパー, .type-badge.超能力, .type-badge.PSY {
     background-color: #EF3F7A;
 }
 
-.type-badge.rock, .type-badge.いわ, .type-badge.岩石, .type-badge.roche {
+.type-badge.ROCK, .type-badge.いわ, .type-badge.岩石, .type-badge.ROCHE {
     background-color: #B0AB82;
 }
 
-.type-badge.steel, .type-badge.はがね, .type-badge.钢, .type-badge.acier {
+.type-badge.STEEL, .type-badge.はがね, .type-badge.钢, .type-badge.ACIER {
     background-color: #60A2B9;
 }
 
-.type-badge.ice, .type-badge.こおり, .type-badge.冰, .type-badge.glace {
+.type-badge.ICE, .type-badge.こおり, .type-badge.冰, .type-badge.GLACE {
     background-color: #3DD9FF;
 }
 
-.type-badge.ghost, .type-badge.ゴースト, .type-badge.幽灵, .type-badge.spectre {
+.type-badge.GHOST, .type-badge.ゴースト, .type-badge.幽灵, .type-badge.SPECTRE {
     background-color: #713F71;
 }
 
-.type-badge.dragon, .type-badge.ドラゴン, .type-badge.龙 {
+.type-badge.DRAGON, .type-badge.ドラゴン, .type-badge.龙 {
     background-color: #4F60E2;
 }
 
-.type-badge.dark, .type-badge.あく, .type-badge.惡, .type-badge.ténèbres {
+.type-badge.DARK, .type-badge.あく, .type-badge.恶, .type-badge.TÉNÈBRES {
     background-color: #4F3F3D;
 }
 
@@ -496,12 +520,12 @@
 
 /* Animation pour le changement de forme */
 .pokemon-card {
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .pokemon-card:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 /* Effet de brillance sur le bord doré */
@@ -523,3 +547,33 @@
     background-blend-mode: overlay;
 }
 */
+
+/* Ajustement responsive */
+@media (max-width: 768px) {
+    .type-buttons-container {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .type-button {
+        width: 100px;
+        height: 35px;
+    }
+
+    .type-icon {
+        width: 70px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .type-buttons-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .type-button {
+        width: 90px;
+        height: 30px;
+    }
+}

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import PropTypes from 'prop-types';
 import "./pokemonCard.css";
+import { getTypeIcon } from '../../assets/imageLibrary';
 
 const PokemonCard = ({ name, types, image, imageShiny, attack, defense, hp, currentLanguage }) => {
     const [currentHP, setCurrentHP] = useState(hp);
@@ -10,8 +11,6 @@ const PokemonCard = ({ name, types, image, imageShiny, attack, defense, hp, curr
         setCurrentHP(prev => Math.max(0, prev - 10));
     };
 
-    const currentTypes = types[currentLanguage] || [];
-
     useEffect(() => {
         if (currentHP <= 0) {
             alert("Le pokémon est K.O.");
@@ -19,7 +18,7 @@ const PokemonCard = ({ name, types, image, imageShiny, attack, defense, hp, curr
     }, [currentHP]);
 
     return (
-        <div className="pokemon-card" data-type={currentTypes[0]?.toLowerCase()}>
+        <div className="pokemon-card" data-type={types[currentLanguage][0]?.toUpperCase()}>
             <div className="pokemon-name-container">
                 <span className="pokemon-name">{name}</span>
                 <button 
@@ -34,11 +33,15 @@ const PokemonCard = ({ name, types, image, imageShiny, attack, defense, hp, curr
                 src={isShiny ? imageShiny : image} 
                 alt={name} 
             />
-            <div className="pokemon-types-container">
-                {currentTypes.map((type) => (
-                    <span key={type} className={`type-badge ${type.toLowerCase()}`}>
-                        {type}
-                    </span>
+            <div className="pokemon-types">
+                {types[currentLanguage].map((type) => (
+                    <div key={type} className="type-badge">
+                        <img 
+                            src={getTypeIcon(type, currentLanguage)}
+                            alt={type}
+                            className="type-icon"
+                        />
+                    </div>
                 ))}
             </div>
             <div className="pokemon-stats-container">
