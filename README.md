@@ -11,7 +11,7 @@ Ce frontend est une application React moderne permettant de consulter, recherche
 1. Cloner le dépôt et se placer dans le dossier frontend :
 
 ```bash
-git clone <url-du-repo>
+git clone https://github.com/zkerkeb-class/pokedex-starter-EnzoSinghavara.git
 cd pokedex-starter-EnzoSinghavara
 ```
 
@@ -45,6 +45,7 @@ npm run dev
 ## Documentation de l'API (utilisée)
 
 Voir le README du backend pour le détail des endpoints.
+https://github.com/zkerkeb-class/pokedex-api-EnzoSinghavara/tree/main
 
 ---
 
