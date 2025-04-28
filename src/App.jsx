@@ -1,35 +1,58 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route, Navigate, useParams, useLocation } from 'react-router-dom';
+import Home from './screens/home';
+import PokemonDetail from './screens/pokemon';
+import PokemonAdmin from './screens/admin/PokemonAdmin';
+import PokemonForm from './components/PokemonForm/PokemonForm';
+import Header from './components/Header/Header';
+import Login from './screens/Login';
+import Register from './screens/Register';
+import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+const EditPokemonRoute = () => {
+  const { id } = useParams();
+  return <PokemonForm pokemonId={id} />;
+};
 
+function CreatePokemonRoute() {
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header showBottom={false} />
+      <PokemonForm />
     </>
-  )
+  );
 }
 
-export default App
+function isAuthenticated() {
+  // Un token ou le mode invité (stocké dans localStorage)
+  return !!localStorage.getItem('token') || localStorage.getItem('guest') === '1';
+}
+
+function isGuest() {
+  return localStorage.getItem('guest') === '1';
+}
+
+function PrivateRoute({ children }) {
+  if (!isAuthenticated() || isGuest()) {
+    return <Navigate to="/login" replace />;
+  }
+  return children;
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={isAuthenticated() ? <Home /> : <Navigate to="/login" replace />} />
+        <Route path="/pokemon/:id" element={isAuthenticated() ? <PokemonDetail /> : <Navigate to="/login" replace />} />
+        <Route path="/admin/pokemon" element={<PrivateRoute><PokemonAdmin /></PrivateRoute>} />
+        <Route path="/admin/pokemon/new" element={<PrivateRoute><CreatePokemonRoute /></PrivateRoute>} />
+        <Route path="/admin/pokemon/:id/edit" element={<PrivateRoute><EditPokemonRoute /></PrivateRoute>} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
