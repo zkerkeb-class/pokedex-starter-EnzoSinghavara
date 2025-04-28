@@ -3507,9 +3507,11 @@ export default pokemonsList.map((pokemon) => ({
 /*
 
 pokemonOfficialImages
+pokemonG5AnimatedImages
 pokemonG7AnimatedImages
 
 pokemonOfficialShinyImages
+pokemonG5AnimatedShinyImages
 pokemonG7AnimatedShinyImages
 
 */

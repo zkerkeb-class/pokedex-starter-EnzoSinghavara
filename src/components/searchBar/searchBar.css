@@ -18,4 +18,16 @@
 
 .type-select {
     min-width: 150px;
+}
+
+.search-input::-webkit-search-cancel-button {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent !important;
+  border: none !important;
+  color: inherit !important;
+  cursor: pointer;
+  filter: none !important;
+  box-shadow: none !important;
+  outline: none !important;
 } 

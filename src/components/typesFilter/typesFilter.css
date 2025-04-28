@@ -105,3 +105,290 @@
     transform: translateY(-2px);
     background: rgba(255, 255, 255, 0.15);
 }
+
+.search-types-row {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.type-icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1.5rem;
+}
+
+.type-icon-filter {
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background: none;
+}
+
+.type-icon-filter.selected {
+    box-shadow: 0 0 10px 2px #ffd700;
+    border-color: #ffd700;
+    transform: scale(1.1);
+}
+
+.type-icon-filter:hover {
+    transform: scale(1.08);
+    filter: brightness(1.15);
+}
+
+/* Supprimer les styles des anciens boutons inutiles */
+.type-button, .type-button.selected, .type-icon {
+    all: unset;
+}
+
+.type-rect-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    align-items: center;
+    margin-left: 1.5rem;
+}
+
+.type-rect-filter {
+    min-width: 60px;
+    height: 32px;
+    padding: 0.2em 1em;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    background: #888;
+    cursor: pointer;
+    transition: box-shadow 0.2s, border 0.2s, background 0.2s, transform 0.2s;
+    text-align: center;
+    outline: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.type-rect-filter.selected {
+    box-shadow: 0 0 8px 2px #ffd700;
+    border: 2px solid #ffd700;
+    background: #222;
+    color: #ffd700;
+    transform: scale(1.07);
+}
+
+.type-rect-filter:hover {
+    filter: brightness(1.15);
+    transform: scale(1.05);
+}
+
+/* Couleurs par type (exemples, à adapter selon ta palette) */
+.type-rect-filter.type-plante { background: #78C850; }
+.type-rect-filter.type-poison { background: #A040A0; }
+.type-rect-filter.type-feu { background: #F08030; }
+.type-rect-filter.type-vol { background: #A890F0; }
+.type-rect-filter.type-eau { background: #6890F0; }
+.type-rect-filter.type-insecte { background: #A8B820; }
+.type-rect-filter.type-normal { background: #A8A878; }
+.type-rect-filter.type-électrik { background: #F8D030; }
+.type-rect-filter.type-sol { background: #E0C068; }
+.type-rect-filter.type-fée { background: #EE99AC; }
+.type-rect-filter.type-combat { background: #C03028; }
+.type-rect-filter.type-psy { background: #F85888; }
+.type-rect-filter.type-roche { background: #B8A038; }
+.type-rect-filter.type-acier { background: #B8B8D0; }
+.type-rect-filter.type-glace { background: #98D8D8; }
+.type-rect-filter.type-spectre { background: #705898; }
+.type-rect-filter.type-dragon { background: #7038F8; }
+.type-rect-filter.type-ténèbres { background: #705848; }
+
+/* Responsive: wrap si trop long */
+@media (max-width: 900px) {
+    .type-rect-buttons-container {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-left: 0.5rem;
+    }
+    .type-rect-filter {
+        font-size: 0.9em;
+        min-width: 48px;
+        height: 28px;
+        padding: 0.1em 0.7em;
+    }
+}
+
+/* Supprimer les anciens styles d'icônes */
+.type-icons-container, .type-icon-filter, .type-icon-filter.selected {
+    display: none !important;
+}
+
+.type-filters-img-row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.type-img-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.7rem;
+}
+
+.type-img-filter-btn {
+    border-radius: 6px;
+    border: 2px solid transparent;
+    background: none;
+    padding: 2px;
+    margin: 0;
+    cursor: pointer;
+    transition: border 0.2s, box-shadow 0.2s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.type-img-filter-btn:focus {
+    outline: none;
+}
+
+.type-img-filter-btn.selected {
+    border-color: #43d13a;
+    border-width: 4px;
+    background: #242424;
+    box-shadow: 0 0 0 2px #43d13a;
+    transform: scale(1.07);
+    padding: 1px;
+}
+
+.type-img-filter-btn.selected:focus,
+.type-img-filter-btn.selected:hover {
+    border-color: #4CAF50;
+}
+
+.type-img-filter-btn:hover {
+    filter: brightness(1.12);
+    transform: scale(1.05);
+}
+
+.search-row-centered {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0.7rem;
+}
+
+.type-img-filter {
+    display: block;
+    max-height: 56px;
+    max-width: 130px;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 900px) {
+    .type-img-buttons-container {
+        gap: 0.5rem;
+    }
+    .type-img-filter {
+        max-height: 42px;
+        max-width: 100px;
+    }
+}
+
+/* Supprimer les anciens styles de boutons rectangulaires */
+.type-rect-buttons-container, .type-rect-filter, .type-rect-filter.selected {
+    display: none !important;
+}
+
+.reset-filters-btn {
+    margin-left: 1rem;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    border: none;
+    background: transparent;
+    color: rgba(255,255,255,0.3);
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: default;
+    transition: background 0.2s, color 0.2s, opacity 0.2s, transform 0.2s;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    opacity: 1;
+}
+
+.reset-filters-btn.active {
+    background: #e74c3c;
+    color: #fff;
+    cursor: pointer;
+}
+
+.reset-filters-btn:disabled {
+    cursor: default;
+    color: rgba(255,255,255,0.3);
+    background: transparent;
+    opacity: 1;
+}
+
+.reset-filters-btn:hover:not(.active) {
+    background: transparent;
+    color: rgba(255,255,255,0.3);
+    transform: none;
+}
+
+.reset-filters-btn.active:hover {
+    background: #c0392b;
+    color: #fff;
+    transform: scale(1.07);
+    opacity: 1;
+}
+
+.search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.clear-search-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #888;
+    font-size: 1.3em;
+    cursor: pointer;
+    padding: 0 0.2em;
+    line-height: 1;
+    outline: none;
+    z-index: 2;
+}
+
+.clear-search-btn:hover {
+    color: #e74c3c;
+}
+
+.type-limit-msg {
+    color: #e74c3c;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0.5em;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}

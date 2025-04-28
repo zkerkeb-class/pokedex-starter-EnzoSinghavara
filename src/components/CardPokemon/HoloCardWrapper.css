@@ -1,0 +1,46 @@
+.holo-tilt-wrapper {
+  width: 300px;
+  height: 400px;
+  perspective: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.holo-tilt-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 28px;
+  background: none;
+  position: relative;
+  transition: box-shadow 0.25s, transform 0.25s cubic-bezier(.22,1,.36,1);
+  will-change: transform, box-shadow;
+  overflow: hidden;
+}
+
+.holo-shine {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(105deg, rgba(255,255,255,0.22) 8%, rgba(255,255,255,0.38) 18%, rgba(255,255,255,0.10) 32%, transparent 60%);
+  opacity: 0.7;
+  z-index: 10;
+  mix-blend-mode: lighten;
+  border-radius: inherit;
+  transition: left 0.3s cubic-bezier(.22,1,.36,1), top 0.3s cubic-bezier(.22,1,.36,1), opacity 0.3s;
+  transform: translate(-100%, -100%);
+}
+
+.holo-tilt-wrapper:hover .holo-shine {
+  opacity: 1;
+}
+
+@keyframes shineHolo {
+  0% { transform: translateY(-100%) rotate(25deg); }
+  50% { transform: translateY(100%) rotate(25deg); }
+  100% { transform: translateY(-100%) rotate(25deg); }
+} 

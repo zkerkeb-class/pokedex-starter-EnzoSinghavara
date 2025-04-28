@@ -309,6 +309,316 @@ import darkrai_official from "./pokemons/official/491.png";
 import darkraiShiny_official from "./pokemons/official/shiny/491.png";
 
 /*================================================================================================================================*/
+/* G5 Animated imports */
+/*================================================================================================================================*/
+
+/* Import all pokemons (normal & shiny) images .gif from generation5Animated folder*/
+import bulbasaur_G5animated from "./pokemons/generation5Animated/1.gif";
+import bulbasaurShiny_G5animated from "./pokemons/generation5Animated/shiny/1.gif";
+import ivysaur_G5animated from "./pokemons/generation5Animated/2.gif";
+import ivysaurShiny_G5animated from "./pokemons/generation5Animated/shiny/2.gif";
+import venusaur_G5animated from "./pokemons/generation5Animated/3.gif";
+import venusaurShiny_G5animated from "./pokemons/generation5Animated/shiny/3.gif";
+import charmander_G5animated from "./pokemons/generation5Animated/4.gif";
+import charmanderShiny_G5animated from "./pokemons/generation5Animated/shiny/4.gif";
+import charmeleon_G5animated from "./pokemons/generation5Animated/5.gif";
+import charmeleonShiny_G5animated from "./pokemons/generation5Animated/shiny/5.gif";
+import charizard_G5animated from "./pokemons/generation5Animated/6.gif";
+import charizardShiny_G5animated from "./pokemons/generation5Animated/shiny/6.gif";
+import squirtle_G5animated from "./pokemons/generation5Animated/7.gif";
+import squirtleShiny_G5animated from "./pokemons/generation5Animated/shiny/7.gif";
+import wartortle_G5animated from "./pokemons/generation5Animated/8.gif";
+import wartortleShiny_G5animated from "./pokemons/generation5Animated/shiny/8.gif";
+import blastoise_G5animated from "./pokemons/generation5Animated/9.gif";
+import blastoiseShiny_G5animated from "./pokemons/generation5Animated/shiny/9.gif";
+import caterpie_G5animated from "./pokemons/generation5Animated/10.gif";
+import caterpieShiny_G5animated from "./pokemons/generation5Animated/shiny/10.gif";
+import metapod_G5animated from "./pokemons/generation5Animated/11.gif";
+import metapodShiny_G5animated from "./pokemons/generation5Animated/shiny/11.gif";
+import butterfree_G5animated from "./pokemons/generation5Animated/12.gif";
+import butterfreeShiny_G5animated from "./pokemons/generation5Animated/shiny/12.gif";
+import weedle_G5animated from "./pokemons/generation5Animated/13.gif";
+import weedleShiny_G5animated from "./pokemons/generation5Animated/shiny/13.gif";
+import kakuna_G5animated from "./pokemons/generation5Animated/14.gif";
+import kakunaShiny_G5animated from "./pokemons/generation5Animated/shiny/14.gif";
+import beedrill_G5animated from "./pokemons/generation5Animated/15.gif";
+import beedrillShiny_G5animated from "./pokemons/generation5Animated/shiny/15.gif";
+import pidgey_G5animated from "./pokemons/generation5Animated/16.gif";
+import pidgeyShiny_G5animated from "./pokemons/generation5Animated/shiny/16.gif";
+import pidgeotto_G5animated from "./pokemons/generation5Animated/17.gif";
+import pidgeottoShiny_G5animated from "./pokemons/generation5Animated/shiny/17.gif";
+import pidgeot_G5animated from "./pokemons/generation5Animated/18.gif";
+import pidgeotShiny_G5animated from "./pokemons/generation5Animated/shiny/18.gif";
+import rattata_G5animated from "./pokemons/generation5Animated/19.gif";
+import rattataShiny_G5animated from "./pokemons/generation5Animated/shiny/19.gif";
+import raticate_G5animated from "./pokemons/generation5Animated/20.gif";
+import raticateShiny_G5animated from "./pokemons/generation5Animated/shiny/20.gif";
+import spearow_G5animated from "./pokemons/generation5Animated/21.gif";
+import spearowShiny_G5animated from "./pokemons/generation5Animated/shiny/21.gif";
+import fearow_G5animated from "./pokemons/generation5Animated/22.gif";
+import fearowShiny_G5animated from "./pokemons/generation5Animated/shiny/22.gif";
+import ekans_G5animated from "./pokemons/generation5Animated/23.gif";
+import ekansShiny_G5animated from "./pokemons/generation5Animated/shiny/23.gif";
+import arbok_G5animated from "./pokemons/generation5Animated/24.gif";
+import arbokShiny_G5animated from "./pokemons/generation5Animated/shiny/24.gif";
+import pikachu_G5animated from "./pokemons/generation5Animated/25.gif";
+import pikachuShiny_G5animated from "./pokemons/generation5Animated/shiny/25.gif";
+import raichu_G5animated from "./pokemons/generation5Animated/26.gif";
+import raichuShiny_G5animated from "./pokemons/generation5Animated/shiny/26.gif";
+import sandshrew_G5animated from "./pokemons/generation5Animated/27.gif";
+import sandshrewShiny_G5animated from "./pokemons/generation5Animated/shiny/27.gif";
+import sandslash_G5animated from "./pokemons/generation5Animated/28.gif";
+import sandslashShiny_G5animated from "./pokemons/generation5Animated/shiny/28.gif";
+import nidoranF_G5animated from "./pokemons/generation5Animated/29.gif";
+import nidoranFShiny_G5animated from "./pokemons/generation5Animated/shiny/29.gif";
+import nidorina_G5animated from "./pokemons/generation5Animated/30.gif";
+import nidorinaShiny_G5animated from "./pokemons/generation5Animated/shiny/30.gif";
+import nidoqueen_G5animated from "./pokemons/generation5Animated/31.gif";
+import nidoqueenShiny_G5animated from "./pokemons/generation5Animated/shiny/31.gif";
+import nidoranM_G5animated from "./pokemons/generation5Animated/32.gif";
+import nidoranMShiny_G5animated from "./pokemons/generation5Animated/shiny/32.gif";
+import nidorino_G5animated from "./pokemons/generation5Animated/33.gif";
+import nidorinoShiny_G5animated from "./pokemons/generation5Animated/shiny/33.gif";
+import nidoking_G5animated from "./pokemons/generation5Animated/34.gif";
+import nidokingShiny_G5animated from "./pokemons/generation5Animated/shiny/34.gif";
+import clefairy_G5animated from "./pokemons/generation5Animated/35.gif";
+import clefairyShiny_G5animated from "./pokemons/generation5Animated/shiny/35.gif";
+import clefable_G5animated from "./pokemons/generation5Animated/36.gif";
+import clefableShiny_G5animated from "./pokemons/generation5Animated/shiny/36.gif";
+import vulpix_G5animated from "./pokemons/generation5Animated/37.gif";
+import vulpixShiny_G5animated from "./pokemons/generation5Animated/shiny/37.gif";
+import ninetales_G5animated from "./pokemons/generation5Animated/38.gif";
+import ninetalesShiny_G5animated from "./pokemons/generation5Animated/shiny/38.gif";
+import jigglypuff_G5animated from "./pokemons/generation5Animated/39.gif";
+import jigglypuffShiny_G5animated from "./pokemons/generation5Animated/shiny/39.gif";
+import wigglytuff_G5animated from "./pokemons/generation5Animated/40.gif";
+import wigglytuffShiny_G5animated from "./pokemons/generation5Animated/shiny/40.gif";
+import zubat_G5animated from "./pokemons/generation5Animated/41.gif";
+import zubatShiny_G5animated from "./pokemons/generation5Animated/shiny/41.gif";
+import golbat_G5animated from "./pokemons/generation5Animated/42.gif";
+import golbatShiny_G5animated from "./pokemons/generation5Animated/shiny/42.gif";
+import oddish_G5animated from "./pokemons/generation5Animated/43.gif";
+import oddishShiny_G5animated from "./pokemons/generation5Animated/shiny/43.gif";
+import gloom_G5animated from "./pokemons/generation5Animated/44.gif";
+import gloomShiny_G5animated from "./pokemons/generation5Animated/shiny/44.gif";
+import vileplume_G5animated from "./pokemons/generation5Animated/45.gif";
+import vileplumeShiny_G5animated from "./pokemons/generation5Animated/shiny/45.gif";
+import paras_G5animated from "./pokemons/generation5Animated/46.gif";
+import parasShiny_G5animated from "./pokemons/generation5Animated/shiny/46.gif";
+import parasect_G5animated from "./pokemons/generation5Animated/47.gif";
+import parasectShiny_G5animated from "./pokemons/generation5Animated/shiny/47.gif";
+import venonat_G5animated from "./pokemons/generation5Animated/48.gif";
+import venonatShiny_G5animated from "./pokemons/generation5Animated/shiny/48.gif";
+import venomoth_G5animated from "./pokemons/generation5Animated/49.gif";
+import venomothShiny_G5animated from "./pokemons/generation5Animated/shiny/49.gif";
+import diglett_G5animated from "./pokemons/generation5Animated/50.gif";
+import diglettShiny_G5animated from "./pokemons/generation5Animated/shiny/50.gif";
+import dugtrio_G5animated from "./pokemons/generation5Animated/51.gif";
+import dugtrioShiny_G5animated from "./pokemons/generation5Animated/shiny/51.gif";
+import meowth_G5animated from "./pokemons/generation5Animated/52.gif";
+import meowthShiny_G5animated from "./pokemons/generation5Animated/shiny/52.gif";
+import persian_G5animated from "./pokemons/generation5Animated/53.gif";
+import persianShiny_G5animated from "./pokemons/generation5Animated/shiny/53.gif";
+import psyduck_G5animated from "./pokemons/generation5Animated/54.gif";
+import psyduckShiny_G5animated from "./pokemons/generation5Animated/shiny/54.gif";
+import golduck_G5animated from "./pokemons/generation5Animated/55.gif";
+import golduckShiny_G5animated from "./pokemons/generation5Animated/shiny/55.gif";
+import mankey_G5animated from "./pokemons/generation5Animated/56.gif";
+import mankeyShiny_G5animated from "./pokemons/generation5Animated/shiny/56.gif";
+import primeape_G5animated from "./pokemons/generation5Animated/57.gif";
+import primeapeShiny_G5animated from "./pokemons/generation5Animated/shiny/57.gif";
+import growlithe_G5animated from "./pokemons/generation5Animated/58.gif";
+import growlitheShiny_G5animated from "./pokemons/generation5Animated/shiny/58.gif";
+import arcanine_G5animated from "./pokemons/generation5Animated/59.gif";
+import arcanineShiny_G5animated from "./pokemons/generation5Animated/shiny/59.gif";
+import poliwag_G5animated from "./pokemons/generation5Animated/60.gif";
+import poliwagShiny_G5animated from "./pokemons/generation5Animated/shiny/60.gif";
+import poliwhirl_G5animated from "./pokemons/generation5Animated/61.gif";
+import poliwhirlShiny_G5animated from "./pokemons/generation5Animated/shiny/61.gif";
+import poliwrath_G5animated from "./pokemons/generation5Animated/62.gif";
+import poliwrathShiny_G5animated from "./pokemons/generation5Animated/shiny/62.gif";
+import abra_G5animated from "./pokemons/generation5Animated/63.gif";
+import abraShiny_G5animated from "./pokemons/generation5Animated/shiny/63.gif";
+import kadabra_G5animated from "./pokemons/generation5Animated/64.gif";
+import kadabraShiny_G5animated from "./pokemons/generation5Animated/shiny/64.gif";
+import alakazam_G5animated from "./pokemons/generation5Animated/65.gif";
+import alakazamShiny_G5animated from "./pokemons/generation5Animated/shiny/65.gif";
+import machop_G5animated from "./pokemons/generation5Animated/66.gif";
+import machopShiny_G5animated from "./pokemons/generation5Animated/shiny/66.gif";
+import machoke_G5animated from "./pokemons/generation5Animated/67.gif";
+import machokeShiny_G5animated from "./pokemons/generation5Animated/shiny/67.gif";
+import machamp_G5animated from "./pokemons/generation5Animated/68.gif";
+import machampShiny_G5animated from "./pokemons/generation5Animated/shiny/68.gif";
+import bellsprout_G5animated from "./pokemons/generation5Animated/69.gif";
+import bellsproutShiny_G5animated from "./pokemons/generation5Animated/shiny/69.gif";
+import weepinbell_G5animated from "./pokemons/generation5Animated/50.gif";
+import weepinbellShiny_G5animated from "./pokemons/generation5Animated/shiny/70.gif";
+import victreebel_G5animated from "./pokemons/generation5Animated/71.gif";
+import victreebelShiny_G5animated from "./pokemons/generation5Animated/shiny/71.gif";
+import tentacool_G5animated from "./pokemons/generation5Animated/72.gif";
+import tentacoolShiny_G5animated from "./pokemons/generation5Animated/shiny/72.gif";
+import tentacruel_G5animated from "./pokemons/generation5Animated/73.gif";
+import tentacruelShiny_G5animated from "./pokemons/generation5Animated/shiny/73.gif";
+import geodude_G5animated from "./pokemons/generation5Animated/74.gif";
+import geodudeShiny_G5animated from "./pokemons/generation5Animated/shiny/74.gif";
+import graveler_G5animated from "./pokemons/generation5Animated/75.gif";
+import gravelerShiny_G5animated from "./pokemons/generation5Animated/shiny/75.gif";
+import golem_G5animated from "./pokemons/generation5Animated/76.gif";
+import golemShiny_G5animated from "./pokemons/generation5Animated/shiny/76.gif";
+import ponyta_G5animated from "./pokemons/generation5Animated/75.gif";
+import ponytaShiny_G5animated from "./pokemons/generation5Animated/shiny/75.gif";
+import rapidash_G5animated from "./pokemons/generation5Animated/58.gif";
+import rapidashShiny_G5animated from "./pokemons/generation5Animated/shiny/58.gif";
+import slowpoke_G5animated from "./pokemons/generation5Animated/79.gif";
+import slowpokeShiny_G5animated from "./pokemons/generation5Animated/shiny/79.gif";
+import slowbro_G5animated from "./pokemons/generation5Animated/80.gif";
+import slowbroShiny_G5animated from "./pokemons/generation5Animated/shiny/80.gif";
+import magnemite_G5animated from "./pokemons/generation5Animated/81.gif";
+import magnemiteShiny_G5animated from "./pokemons/generation5Animated/shiny/81.gif";
+import magneton_G5animated from "./pokemons/generation5Animated/82.gif";
+import magnetonShiny_G5animated from "./pokemons/generation5Animated/shiny/82.gif";
+import farfetchd_G5animated from "./pokemons/generation5Animated/83.gif";
+import farfetchdShiny_G5animated from "./pokemons/generation5Animated/shiny/83.gif";
+import doduo_G5animated from "./pokemons/generation5Animated/84.gif";
+import doduoShiny_G5animated from "./pokemons/generation5Animated/shiny/84.gif";
+import dodrio_G5animated from "./pokemons/generation5Animated/85.gif";
+import dodrioShiny_G5animated from "./pokemons/generation5Animated/shiny/85.gif";
+import seel_G5animated from "./pokemons/generation5Animated/86.gif";
+import seelShiny_G5animated from "./pokemons/generation5Animated/shiny/86.gif";
+import dewgong_G5animated from "./pokemons/generation5Animated/87.gif";
+import dewgongShiny_G5animated from "./pokemons/generation5Animated/shiny/87.gif";
+import grimer_G5animated from "./pokemons/generation5Animated/88.gif";
+import grimerShiny_G5animated from "./pokemons/generation5Animated/shiny/88.gif";
+import muk_G5animated from "./pokemons/generation5Animated/89.gif";
+import mukShiny_G5animated from "./pokemons/generation5Animated/shiny/89.gif";
+import shellder_G5animated from "./pokemons/generation5Animated/90.gif";
+import shellderShiny_G5animated from "./pokemons/generation5Animated/shiny/90.gif";
+import cloyster_G5animated from "./pokemons/generation5Animated/91.gif";
+import cloysterShiny_G5animated from "./pokemons/generation5Animated/shiny/91.gif";
+import gastly_G5animated from "./pokemons/generation5Animated/92.gif";
+import gastlyShiny_G5animated from "./pokemons/generation5Animated/shiny/92.gif";
+import haunter_G5animated from "./pokemons/generation5Animated/93.gif";
+import haunterShiny_G5animated from "./pokemons/generation5Animated/shiny/93.gif";
+import gengar_G5animated from "./pokemons/generation5Animated/94.gif";
+import gengarShiny_G5animated from "./pokemons/generation5Animated/shiny/94.gif";
+import onix_G5animated from "./pokemons/generation5Animated/95.gif";
+import onixShiny_G5animated from "./pokemons/generation5Animated/shiny/95.gif";
+import drowzee_G5animated from "./pokemons/generation5Animated/96.gif";
+import drowzeeShiny_G5animated from "./pokemons/generation5Animated/shiny/96.gif";
+import hypno_G5animated from "./pokemons/generation5Animated/97.gif";
+import hypnoShiny_G5animated from "./pokemons/generation5Animated/shiny/97.gif";
+import krabby_G5animated from "./pokemons/generation5Animated/98.gif";
+import krabbyShiny_G5animated from "./pokemons/generation5Animated/shiny/98.gif";
+import kingler_G5animated from "./pokemons/generation5Animated/99.gif";
+import kinglerShiny_G5animated from "./pokemons/generation5Animated/shiny/99.gif";
+import voltorb_G5animated from "./pokemons/generation5Animated/100.gif";
+import voltorbShiny_G5animated from "./pokemons/generation5Animated/shiny/100.gif";
+import electrode_G5animated from "./pokemons/generation5Animated/101.gif";
+import electrodeShiny_G5animated from "./pokemons/generation5Animated/shiny/101.gif";
+import exeggcute_G5animated from "./pokemons/generation5Animated/102.gif";
+import exeggcuteShiny_G5animated from "./pokemons/generation5Animated/shiny/102.gif";
+import exeggutor_G5animated from "./pokemons/generation5Animated/103.gif";
+import exeggutorShiny_G5animated from "./pokemons/generation5Animated/shiny/103.gif";
+import cubone_G5animated from "./pokemons/generation5Animated/104.gif";
+import cuboneShiny_G5animated from "./pokemons/generation5Animated/shiny/104.gif";
+import marowak_G5animated from "./pokemons/generation5Animated/105.gif";
+import marowakShiny_G5animated from "./pokemons/generation5Animated/shiny/105.gif";
+import hitmonlee_G5animated from "./pokemons/generation5Animated/106.gif";
+import hitmonleeShiny_G5animated from "./pokemons/generation5Animated/shiny/106.gif";
+import hitmonchan_G5animated from "./pokemons/generation5Animated/107.gif";
+import hitmonchanShiny_G5animated from "./pokemons/generation5Animated/shiny/107.gif";
+import lickitung_G5animated from "./pokemons/generation5Animated/108.gif";
+import lickitungShiny_G5animated from "./pokemons/generation5Animated/shiny/108.gif";
+import koffing_G5animated from "./pokemons/generation5Animated/109.gif";
+import koffingShiny_G5animated from "./pokemons/generation5Animated/shiny/109.gif";
+import weezing_G5animated from "./pokemons/generation5Animated/110.gif";
+import weezingShiny_G5animated from "./pokemons/generation5Animated/shiny/110.gif";
+import rhyhorn_G5animated from "./pokemons/generation5Animated/111.gif";
+import rhyhornShiny_G5animated from "./pokemons/generation5Animated/shiny/111.gif";
+import rhydon_G5animated from "./pokemons/generation5Animated/112.gif";
+import rhydonShiny_G5animated from "./pokemons/generation5Animated/shiny/112.gif";
+import chansey_G5animated from "./pokemons/generation5Animated/113.gif";
+import chanseyShiny_G5animated from "./pokemons/generation5Animated/shiny/113.gif";
+import tangela_G5animated from "./pokemons/generation5Animated/114.gif";
+import tangelaShiny_G5animated from "./pokemons/generation5Animated/shiny/114.gif";
+import kangaskhan_G5animated from "./pokemons/generation5Animated/115.gif";
+import kangaskhanShiny_G5animated from "./pokemons/generation5Animated/shiny/115.gif";
+import horsea_G5animated from "./pokemons/generation5Animated/116.gif";
+import horseaShiny_G5animated from "./pokemons/generation5Animated/shiny/116.gif";
+import seadra_G5animated from "./pokemons/generation5Animated/117.gif";
+import seadraShiny_G5animated from "./pokemons/generation5Animated/shiny/117.gif";
+import goldeen_G5animated from "./pokemons/generation5Animated/118.gif";
+import goldeenShiny_G5animated from "./pokemons/generation5Animated/shiny/118.gif";
+import seaking_G5animated from "./pokemons/generation5Animated/119.gif";
+import seakingShiny_G5animated from "./pokemons/generation5Animated/shiny/119.gif";
+import staryu_G5animated from "./pokemons/generation5Animated/120.gif";
+import staryuShiny_G5animated from "./pokemons/generation5Animated/shiny/120.gif";
+import starmie_G5animated from "./pokemons/generation5Animated/121.gif";
+import starmieShiny_G5animated from "./pokemons/generation5Animated/shiny/121.gif";
+import mrMime_G5animated from "./pokemons/generation5Animated/122.gif";
+import mrMimeShiny_G5animated from "./pokemons/generation5Animated/shiny/122.gif";
+import scyther_G5animated from "./pokemons/generation5Animated/123.gif";
+import scytherShiny_G5animated from "./pokemons/generation5Animated/shiny/123.gif";
+import jynx_G5animated from "./pokemons/generation5Animated/124.gif";
+import jynxShiny_G5animated from "./pokemons/generation5Animated/shiny/124.gif";
+import electabuzz_G5animated from "./pokemons/generation5Animated/125.gif";
+import electabuzzShiny_G5animated from "./pokemons/generation5Animated/shiny/125.gif";
+import magmar_G5animated from "./pokemons/generation5Animated/126.gif";
+import magmarShiny_G5animated from "./pokemons/generation5Animated/shiny/126.gif";
+import pinsir_G5animated from "./pokemons/generation5Animated/127.gif";
+import pinsirShiny_G5animated from "./pokemons/generation5Animated/shiny/127.gif";
+import tauros_G5animated from "./pokemons/generation5Animated/128.gif";
+import taurosShiny_G5animated from "./pokemons/generation5Animated/shiny/128.gif";
+import magikarp_G5animated from "./pokemons/generation5Animated/129.gif";
+import magikarpShiny_G5animated from "./pokemons/generation5Animated/shiny/129.gif";
+import gyarados_G5animated from "./pokemons/generation5Animated/130.gif";
+import gyaradosShiny_G5animated from "./pokemons/generation5Animated/shiny/130.gif";
+import lapras_G5animated from "./pokemons/generation5Animated/131.gif";
+import laprasShiny_G5animated from "./pokemons/generation5Animated/shiny/131.gif";
+import ditto_G5animated from "./pokemons/generation5Animated/132.gif";
+import dittoShiny_G5animated from "./pokemons/generation5Animated/shiny/132.gif";
+import eevee_G5animated from "./pokemons/generation5Animated/133.gif";
+import eeveeShiny_G5animated from "./pokemons/generation5Animated/shiny/133.gif";
+import vaporeon_G5animated from "./pokemons/generation5Animated/134.gif";
+import vaporeonShiny_G5animated from "./pokemons/generation5Animated/shiny/134.gif";
+import jolteon_G5animated from "./pokemons/generation5Animated/135.gif";
+import jolteonShiny_G5animated from "./pokemons/generation5Animated/shiny/135.gif";
+import flareon_G5animated from "./pokemons/generation5Animated/136.gif";
+import flareonShiny_G5animated from "./pokemons/generation5Animated/shiny/136.gif";
+import porygon_G5animated from "./pokemons/generation5Animated/137.gif";
+import porygonShiny_G5animated from "./pokemons/generation5Animated/shiny/137.gif";
+import omanyte_G5animated from "./pokemons/generation5Animated/138.gif";
+import omanyteShiny_G5animated from "./pokemons/generation5Animated/shiny/138.gif";
+import omastar_G5animated from "./pokemons/generation5Animated/139.gif";
+import omastarShiny_G5animated from "./pokemons/generation5Animated/shiny/139.gif";
+import kabuto_G5animated from "./pokemons/generation5Animated/140.gif";
+import kabutoShiny_G5animated from "./pokemons/generation5Animated/shiny/140.gif";
+import kabutops_G5animated from "./pokemons/generation5Animated/141.gif";
+import kabutopsShiny_G5animated from "./pokemons/generation5Animated/shiny/141.gif";
+import aerodactyl_G5animated from "./pokemons/generation5Animated/142.gif";
+import aerodactylShiny_G5animated from "./pokemons/generation5Animated/shiny/142.gif";
+import snorlax_G5animated from "./pokemons/generation5Animated/143.gif";
+import snorlaxShiny_G5animated from "./pokemons/generation5Animated/shiny/143.gif";
+import articuno_G5animated from "./pokemons/generation5Animated/144.gif";
+import articunoShiny_G5animated from "./pokemons/generation5Animated/shiny/144.gif";
+import zapdos_G5animated from "./pokemons/generation5Animated/145.gif";
+import zapdosShiny_G5animated from "./pokemons/generation5Animated/shiny/145.gif";
+import moltres_G5animated from "./pokemons/generation5Animated/146.gif";
+import moltresShiny_G5animated from "./pokemons/generation5Animated/shiny/146.gif";
+import dratini_G5animated from "./pokemons/generation5Animated/147.gif";
+import dratiniShiny_G5animated from "./pokemons/generation5Animated/shiny/147.gif";
+import dragonair_G5animated from "./pokemons/generation5Animated/148.gif";
+import dragonairShiny_G5animated from "./pokemons/generation5Animated/shiny/148.gif";
+import dragonite_G5animated from "./pokemons/generation5Animated/149.gif";
+import dragoniteShiny_G5animated from "./pokemons/generation5Animated/shiny/149.gif";
+import mewtwo_G5animated from "./pokemons/generation5Animated/150.gif";
+import mewtwoShiny_G5animated from "./pokemons/generation5Animated/shiny/150.gif";
+import mew_G5animated from "./pokemons/generation5Animated/151.gif";
+import mewShiny_G5animated from "./pokemons/generation5Animated/shiny/151.gif";
+import darkrai_G5animated from "./pokemons/generation5Animated/491.gif";
+import darkraiShiny_G5animated from "./pokemons/generation5Animated/shiny/491.gif";
+
+/*================================================================================================================================*/
 /* G7 Animated imports */
 /*================================================================================================================================*/
 
@@ -425,8 +735,8 @@ import golduck_G7animated from "./pokemons/generation7Animated/55.gif";
 import golduckShiny_G7animated from "./pokemons/generation7Animated/shiny/55.gif";
 import mankey_G7animated from "./pokemons/generation7Animated/56.gif";
 import mankeyShiny_G7animated from "./pokemons/generation7Animated/shiny/56.gif";
-import primeape_G7animated from "./pokemons/generation7Animated/57.gif";
-import primeapeShiny_G7animated from "./pokemons/generation7Animated/shiny/57.gif";
+import primeape_G7animated from "./pokemons/generation7Animated/55.gif";
+import primeapeShiny_G7animated from "./pokemons/generation7Animated/shiny/55.gif";
 import growlithe_G7animated from "./pokemons/generation7Animated/58.gif";
 import growlitheShiny_G7animated from "./pokemons/generation7Animated/shiny/58.gif";
 import arcanine_G7animated from "./pokemons/generation7Animated/59.gif";
@@ -778,6 +1088,162 @@ export const pokemonOfficialImages = {
   491: darkrai_official
 };
 
+/* Export all G5 animated normal pokemons images*/
+export const pokemonG5AnimatedImages = {
+  1: bulbasaur_G5animated,
+  2: ivysaur_G5animated,
+  3: venusaur_G5animated,
+  4: charmander_G5animated,
+  5: charmeleon_G5animated,
+  6: charizard_G5animated,
+  7: squirtle_G5animated,
+  8: wartortle_G5animated,
+  9: blastoise_G5animated,
+  10: caterpie_G5animated,
+  11: metapod_G5animated,
+  12: butterfree_G5animated,
+  13: weedle_G5animated,
+  14: kakuna_G5animated,
+  15: beedrill_G5animated,
+  16: pidgey_G5animated,
+  17: pidgeotto_G5animated,
+  18: pidgeot_G5animated,
+  19: rattata_G5animated,
+  20: raticate_G5animated,
+  21: spearow_G5animated,
+  22: fearow_G5animated,
+  23: ekans_G5animated,
+  24: arbok_G5animated,
+  25: pikachu_G5animated,
+  26: raichu_G5animated,
+  27: sandshrew_G5animated,
+  28: sandslash_G5animated,
+  29: nidoranF_G5animated,
+  30: nidorina_G5animated,
+  31: nidoqueen_G5animated,
+  32: nidoranM_G5animated,
+  33: nidorino_G5animated,
+  34: nidoking_G5animated,
+  35: clefairy_G5animated,
+  36: clefable_G5animated,
+  37: vulpix_G5animated,
+  38: ninetales_G5animated,
+  39: jigglypuff_G5animated,
+  40: wigglytuff_G5animated,
+  41: zubat_G5animated,
+  42: golbat_G5animated,
+  43: oddish_G5animated,
+  44: gloom_G5animated,
+  45: vileplume_G5animated,
+  46: paras_G5animated,
+  47: parasect_G5animated,
+  48: venonat_G5animated,
+  49: venomoth_G5animated,
+  50: diglett_G5animated,
+  51: dugtrio_G5animated,
+  52: meowth_G5animated,
+  53: persian_G5animated,
+  54: psyduck_G5animated,
+  55: golduck_G5animated,
+  56: mankey_G5animated,
+  57: primeape_G5animated,
+  58: growlithe_G5animated,
+  59: arcanine_G5animated,
+  60: poliwag_G5animated,
+  61: poliwhirl_G5animated,
+  62: poliwrath_G5animated,
+  63: abra_G5animated,
+  64: kadabra_G5animated,
+  65: alakazam_G5animated,
+  66: machop_G5animated,
+  67: machoke_G5animated,
+  68: machamp_G5animated,
+  69: bellsprout_G5animated,
+  70: weepinbell_G5animated,
+  71: victreebel_G5animated,
+  72: tentacool_G5animated,
+  73: tentacruel_G5animated,
+  74: geodude_G5animated,
+  75: graveler_G5animated,
+  76: golem_G5animated,
+  77: ponyta_G5animated,
+  78: rapidash_G5animated,
+  79: slowpoke_G5animated,
+  80: slowbro_G5animated,
+  81: magnemite_G5animated,
+  82: magneton_G5animated,
+  83: farfetchd_G5animated,
+  84: doduo_G5animated,
+  85: dodrio_G5animated,
+  86: seel_G5animated,
+  87: dewgong_G5animated,
+  88: grimer_G5animated,
+  89: muk_G5animated,
+  90: shellder_G5animated,
+  91: cloyster_G5animated,
+  92: gastly_G5animated,
+  93: haunter_G5animated,
+  94: gengar_G5animated,
+  95: onix_G5animated,
+  96: drowzee_G5animated,
+  97: hypno_G5animated,
+  98: krabby_G5animated,
+  99: kingler_G5animated,
+  100: voltorb_G5animated,
+  101: electrode_G5animated,
+  102: exeggcute_G5animated,
+  103: exeggutor_G5animated,
+  104: cubone_G5animated,
+  105: marowak_G5animated,
+  106: hitmonlee_G5animated,
+  107: hitmonchan_G5animated,
+  108: lickitung_G5animated,
+  109: koffing_G5animated,
+  110: weezing_G5animated,
+  111: rhyhorn_G5animated,
+  112: rhydon_G5animated,
+  113: chansey_G5animated,
+  114: tangela_G5animated,
+  115: kangaskhan_G5animated,
+  116: horsea_G5animated,
+  117: seadra_G5animated,
+  118: goldeen_G5animated,
+  119: seaking_G5animated,
+  120: staryu_G5animated,
+  121: starmie_G5animated,
+  122: mrMime_G5animated,
+  123: scyther_G5animated,
+  124: jynx_G5animated,
+  125: electabuzz_G5animated,
+  126: magmar_G5animated,
+  127: pinsir_G5animated,
+  128: tauros_G5animated,
+  129: magikarp_G5animated,
+  130: gyarados_G5animated,
+  131: lapras_G5animated,
+  132: ditto_G5animated,
+  133: eevee_G5animated,
+  134: vaporeon_G5animated,
+  135: jolteon_G5animated,
+  136: flareon_G5animated,
+  137: porygon_G5animated,
+  138: omanyte_G5animated,
+  139: omastar_G5animated,
+  140: kabuto_G5animated,
+  141: kabutops_G5animated,
+  142: aerodactyl_G5animated,
+  143: snorlax_G5animated,
+  144: articuno_G5animated,
+  145: zapdos_G5animated,
+  146: moltres_G5animated,
+  147: dratini_G5animated,
+  148: dragonair_G5animated,
+  149: dragonite_G5animated,
+  150: mewtwo_G5animated,
+  151: mew_G5animated,
+  491: darkrai_G5animated
+};
+
 /* Export all G7 animated normal pokemons images*/
 export const pokemonG7AnimatedImages = {
   1: bulbasaur_G7animated,
@@ -1094,6 +1560,162 @@ export const pokemonOfficialShinyImages = {
   491: darkraiShiny_official
 };
 
+/* Export all G5 animated shiny pokemons images*/
+export const pokemonG5AnimatedShinyImages = {
+  1: bulbasaurShiny_G5animated,
+  2: ivysaurShiny_G5animated,
+  3: venusaurShiny_G5animated,
+  4: charmanderShiny_G5animated,
+  5: charmeleonShiny_G5animated,
+  6: charizardShiny_G5animated,
+  7: squirtleShiny_G5animated,
+  8: wartortleShiny_G5animated,
+  9: blastoiseShiny_G5animated,
+  10: caterpieShiny_G5animated,
+  11: metapodShiny_G5animated,
+  12: butterfreeShiny_G5animated,
+  13: weedleShiny_G5animated,
+  14: kakunaShiny_G5animated,
+  15: beedrillShiny_G5animated,
+  16: pidgeyShiny_G5animated,
+  17: pidgeottoShiny_G5animated,
+  18: pidgeotShiny_G5animated,
+  19: rattataShiny_G5animated,
+  20: raticateShiny_G5animated,
+  21: spearowShiny_G5animated,
+  22: fearowShiny_G5animated,
+  23: ekansShiny_G5animated,
+  24: arbokShiny_G5animated,
+  25: pikachuShiny_G5animated,
+  26: raichuShiny_G5animated,
+  27: sandshrewShiny_G5animated,
+  28: sandslashShiny_G5animated,
+  29: nidoranFShiny_G5animated,
+  30: nidorinaShiny_G5animated,
+  31: nidoqueenShiny_G5animated,
+  32: nidoranMShiny_G5animated,
+  33: nidorinoShiny_G5animated,
+  34: nidokingShiny_G5animated,
+  35: clefairyShiny_G5animated,
+  36: clefableShiny_G5animated,
+  37: vulpixShiny_G5animated,
+  38: ninetalesShiny_G5animated,
+  39: jigglypuffShiny_G5animated,
+  40: wigglytuffShiny_G5animated,
+  41: zubatShiny_G5animated,
+  42: golbatShiny_G5animated,
+  43: oddishShiny_G5animated,
+  44: gloomShiny_G5animated,
+  45: vileplumeShiny_G5animated,
+  46: parasShiny_G5animated,
+  47: parasectShiny_G5animated,
+  48: venonatShiny_G5animated,
+  49: venomothShiny_G5animated,
+  50: diglettShiny_G5animated,
+  51: dugtrioShiny_G5animated,
+  52: meowthShiny_G5animated,
+  53: persianShiny_G5animated,
+  54: psyduckShiny_G5animated,
+  55: golduckShiny_G5animated,
+  56: mankeyShiny_G5animated,
+  57: primeapeShiny_G5animated,
+  58: growlitheShiny_G5animated,
+  59: arcanineShiny_G5animated,
+  60: poliwagShiny_G5animated,
+  61: poliwhirlShiny_G5animated,
+  62: poliwrathShiny_G5animated,
+  63: abraShiny_G5animated,
+  64: kadabraShiny_G5animated,
+  65: alakazamShiny_G5animated,
+  66: machopShiny_G5animated,
+  67: machokeShiny_G5animated,
+  68: machampShiny_G5animated,
+  69: bellsproutShiny_G5animated,
+  70: weepinbellShiny_G5animated,
+  71: victreebelShiny_G5animated,
+  72: tentacoolShiny_G5animated,
+  73: tentacruelShiny_G5animated,
+  74: geodudeShiny_G5animated,
+  75: gravelerShiny_G5animated,
+  76: golemShiny_G5animated,
+  77: ponytaShiny_G5animated,
+  78: rapidashShiny_G5animated,
+  79: slowpokeShiny_G5animated,
+  80: slowbroShiny_G5animated,
+  81: magnemiteShiny_G5animated,
+  82: magnetonShiny_G5animated,
+  83: farfetchdShiny_G5animated,
+  84: doduoShiny_G5animated,
+  85: dodrioShiny_G5animated,
+  86: seelShiny_G5animated,
+  87: dewgongShiny_G5animated,
+  88: grimerShiny_G5animated,
+  89: mukShiny_G5animated,
+  90: shellderShiny_G5animated,
+  91: cloysterShiny_G5animated,
+  92: gastlyShiny_G5animated,
+  93: haunterShiny_G5animated,
+  94: gengarShiny_G5animated,
+  95: onixShiny_G5animated,
+  96: drowzeeShiny_G5animated,
+  97: hypnoShiny_G5animated,
+  98: krabbyShiny_G5animated,
+  99: kinglerShiny_G5animated,
+  100: voltorbShiny_G5animated,
+  101: electrodeShiny_G5animated,
+  102: exeggcuteShiny_G5animated,
+  103: exeggutorShiny_G5animated,
+  104: cuboneShiny_G5animated,
+  105: marowakShiny_G5animated,
+  106: hitmonleeShiny_G5animated,
+  107: hitmonchanShiny_G5animated,
+  108: lickitungShiny_G5animated,
+  109: koffingShiny_G5animated,
+  110: weezingShiny_G5animated,
+  111: rhyhornShiny_G5animated,
+  112: rhydonShiny_G5animated,
+  113: chanseyShiny_G5animated,
+  114: tangelaShiny_G5animated,
+  115: kangaskhanShiny_G5animated,
+  116: horseaShiny_G5animated,
+  117: seadraShiny_G5animated,
+  118: goldeenShiny_G5animated,
+  119: seakingShiny_G5animated,
+  120: staryuShiny_G5animated,
+  121: starmieShiny_G5animated,
+  122: mrMimeShiny_G5animated,
+  123: scytherShiny_G5animated,
+  124: jynxShiny_G5animated,
+  125: electabuzzShiny_G5animated,
+  126: magmarShiny_G5animated,
+  127: pinsirShiny_G5animated,
+  128: taurosShiny_G5animated,
+  129: magikarpShiny_G5animated,
+  130: gyaradosShiny_G5animated,
+  131: laprasShiny_G5animated,
+  132: dittoShiny_G5animated,
+  133: eeveeShiny_G5animated,
+  134: vaporeonShiny_G5animated,
+  135: jolteonShiny_G5animated,
+  136: flareonShiny_G5animated,
+  137: porygonShiny_G5animated,
+  138: omanyteShiny_G5animated,
+  139: omastarShiny_G5animated,
+  140: kabutoShiny_G5animated,
+  141: kabutopsShiny_G5animated,
+  142: aerodactylShiny_G5animated,
+  143: snorlaxShiny_G5animated,
+  144: articunoShiny_G5animated,
+  145: zapdosShiny_G5animated,
+  146: moltresShiny_G5animated,
+  147: dratiniShiny_G5animated,
+  148: dragonairShiny_G5animated,
+  149: dragoniteShiny_G5animated,
+  150: mewtwoShiny_G5animated,
+  151: mewShiny_G5animated,
+  491: darkraiShiny_G5animated
+};
+
 /* Export all G7 animated shiny pokemons images*/
 export const pokemonG7AnimatedShinyImages = {
   1: bulbasaurShiny_G7animated,
@@ -1248,178 +1870,4 @@ export const pokemonG7AnimatedShinyImages = {
   150: mewtwoShiny_G7animated,
   151: mewShiny_G7animated,
   491: darkraiShiny_G7animated
-};
-
-/*================================================================================================================================*/
-/* Type icons */
-/*================================================================================================================================*/
-
-/* Import all type icons */
-// English
-import grassEN from "./types/english/1.png";
-import poisonEN from "./types/english/2.png";
-import fireEN from "./types/english/3.png";
-import flyingEN from "./types/english/4.png";
-import waterEN from "./types/english/5.png";
-import bugEN from "./types/english/6.png";
-import normalEN from "./types/english/7.png";
-import electricEN from "./types/english/8.png";
-import groundEN from "./types/english/9.png";
-import fairyEN from "./types/english/10.png";
-import fightingEN from "./types/english/11.png";
-import psychicEN from "./types/english/12.png";
-import rockEN from "./types/english/13.png";
-import steelEN from "./types/english/14.png";
-import iceEN from "./types/english/15.png";
-import ghostEN from "./types/english/16.png";
-import dragonEN from "./types/english/17.png";
-import darkEN from "./types/english/18.png";
-
-// Japanese
-import grassJP from "./types/japanese/1.png";
-import poisonJP from "./types/japanese/2.png";
-import fireJP from "./types/japanese/3.png";
-import flyingJP from "./types/japanese/4.png";
-import waterJP from "./types/japanese/5.png";
-import bugJP from "./types/japanese/6.png";
-import normalJP from "./types/japanese/7.png";
-import electricJP from "./types/japanese/8.png";
-import groundJP from "./types/japanese/9.png";
-import fairyJP from "./types/japanese/10.png";
-import fightingJP from "./types/japanese/11.png";
-import psychicJP from "./types/japanese/12.png";
-import rockJP from "./types/japanese/13.png";
-import steelJP from "./types/japanese/14.png";
-import iceJP from "./types/japanese/15.png";
-import ghostJP from "./types/japanese/16.png";
-import dragonJP from "./types/japanese/17.png";
-import darkJP from "./types/japanese/18.png";
-
-// Chinese
-import grassCN from "./types/chinese/1.png";
-import poisonCN from "./types/chinese/2.png";
-import fireCN from "./types/chinese/3.png";
-import flyingCN from "./types/chinese/4.png";
-import waterCN from "./types/chinese/5.png";
-import bugCN from "./types/chinese/6.png";
-import normalCN from "./types/chinese/7.png";
-import electricCN from "./types/chinese/8.png";
-import groundCN from "./types/chinese/9.png";
-import fairyCN from "./types/chinese/10.png";
-import fightingCN from "./types/chinese/11.png";
-import psychicCN from "./types/chinese/12.png";
-import rockCN from "./types/chinese/13.png";
-import steelCN from "./types/chinese/14.png";
-import iceCN from "./types/chinese/15.png";
-import ghostCN from "./types/chinese/16.png";
-import dragonCN from "./types/chinese/17.png";
-import darkCN from "./types/chinese/18.png";
-
-// French
-import grassFR from "./types/french/1.png";
-import poisonFR from "./types/french/2.png";
-import fireFR from "./types/french/3.png";
-import flyingFR from "./types/french/4.png";
-import waterFR from "./types/french/5.png";
-import bugFR from "./types/french/6.png";
-import normalFR from "./types/french/7.png";
-import electricFR from "./types/french/8.png";
-import groundFR from "./types/french/9.png";
-import fairyFR from "./types/french/10.png";
-import fightingFR from "./types/french/11.png";
-import psychicFR from "./types/french/12.png";
-import rockFR from "./types/french/13.png";
-import steelFR from "./types/french/14.png";
-import iceFR from "./types/french/15.png";
-import ghostFR from "./types/french/16.png";
-import dragonFR from "./types/french/17.png";
-import darkFR from "./types/french/18.png";
-
-export const typeIcons = {
-    english: {
-        GRASS: grassEN,
-        POISON: poisonEN,
-        FIRE: fireEN,
-        FLYING: flyingEN,
-        WATER: waterEN,
-        BUG: bugEN,
-        NORMAL: normalEN,
-        ELECTRIC: electricEN,
-        GROUND: groundEN,
-        FAIRY: fairyEN,
-        FIGHTING: fightingEN,
-        PSYCHIC: psychicEN,
-        ROCK: rockEN,
-        STEEL: steelEN,
-        ICE: iceEN,
-        GHOST: ghostEN,
-        DRAGON: dragonEN,
-        DARK: darkEN
-    },
-    french: {
-        PLANTE: grassFR,
-        POISON: poisonFR,
-        FEU: fireFR,
-        VOL: flyingFR,
-        EAU: waterFR,
-        INSECTE: bugFR,
-        NORMAL: normalFR,
-        ÉLECTRIK: electricFR,
-        SOL: groundFR,
-        FÉE: fairyFR,
-        COMBAT: fightingFR,
-        PSY: psychicFR,
-        ROCHE: rockFR,
-        ACIER: steelFR,
-        GLACE: iceFR,
-        SPECTRE: ghostFR,
-        DRAGON: dragonFR,
-        TÉNÈBRES: darkFR
-    },
-    japanese: {
-        くさ: grassJP,
-        どく: poisonJP,
-        ほのお: fireJP,
-        ひこう: flyingJP,
-        みず: waterJP,
-        むし: bugJP,
-        ノーマル: normalJP,
-        でんき: electricJP,
-        じめん: groundJP,
-        フェアリー: fairyJP,
-        かくとう: fightingJP,
-        エスパー: psychicJP,
-        いわ: rockJP,
-        はがね: steelJP,
-        こおり: iceJP,
-        ゴースト: ghostJP,
-        ドラゴン: dragonJP,
-        あく: darkJP
-    },
-    chinese: {
-        草: grassCN,
-        毒: poisonCN,
-        火: fireCN,
-        飞行: flyingCN,
-        水: waterCN,
-        虫: bugCN,
-        一般: normalCN,
-        电: electricCN,
-        地面: groundCN,
-        妖精: fairyCN,
-        格斗: fightingCN,
-        超能力: psychicCN,
-        岩石: rockCN,
-        钢: steelCN,
-        冰: iceCN,
-        幽灵: ghostCN,
-        龙: dragonCN,
-        恶: darkCN
-    }
-};
-
-export const getTypeIcon = (type, language = 'english') => {
-    const icons = typeIcons[language];
-    if (!icons) return null;
-    return icons[type];
 };
