@@ -150,6 +150,8 @@ function Home() {
   const [error, setError] = useState(null);
   const [imageSet, setImageSet] = useState(() => localStorage.getItem('imageSet') || 'g7');
   const [selectedCard, setSelectedCard] = useState(null);
+  const isGuest = localStorage.getItem('guest') === '1';
+  const isLoggedIn = !!localStorage.getItem('token');
 
   // Fonction pour convertir les types de l'API au format localisé
   const convertTypes = (types, language) => {
@@ -262,7 +264,7 @@ function Home() {
 
   // Handler pour afficher la carte détaillée
   const handleShowDetails = (pokemon) => {
-    navigate(`/pokemon/${pokemon.id}`);
+    navigate(`/pokemon/${pokemon.id}`, { state: { currentLanguage } });
     setSelectedCard(pokemon);
   };
 
@@ -274,8 +276,13 @@ function Home() {
 
   // Handler pour supprimer un Pokémon
   const handleDeletePokemon = async (id) => {
+    if (isGuest) {
+      alert("Action interdite pour l'invité");
+      return;
+    }
     try {
-      await axios.delete(`http://localhost:3000/api/pokemons/${id}`);
+      const token = localStorage.getItem('token');
+      await axios.delete(`http://localhost:3000/api/pokemons/${id}`, token ? { headers: { Authorization: `Bearer ${token}` } } : {});
       // Met à jour la liste locale après suppression
       const updatedPokemons = pokemons.filter(p => p.id !== id);
       setPokemons(updatedPokemons);
@@ -285,12 +292,34 @@ function Home() {
     }
   };
 
+  const handleEditPokemon = (id) => {
+    if (isGuest) {
+      alert("Action interdite pour l'invité");
+      return;
+    }
+    navigate(`/admin/pokemon/${id}/edit`);
+  };
+
   if (loading) {
     return <div className="loading">Chargement des Pokémon...</div>;
   }
 
   if (error) {
-    return <div className="error-message">{error}</div>;
+    return (
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+        fontSize: '2.2rem',
+        fontWeight: 'bold',
+        color: '#fff',
+        textAlign: 'center',
+        background: 'transparent',
+      }}>
+        {error}
+      </div>
+    );
   }
 
   return (
@@ -332,21 +361,52 @@ function Home() {
                   currentLanguage={currentLanguage}
                   onDetails={() => handleShowDetails(pokemon)}
                   onDelete={handleDeletePokemon}
+                  onEdit={isLoggedIn && !isGuest ? handleEditPokemon : undefined}
                 />
               </motion.div>
             ))}
         </AnimatePresence>
       </div>
 
-      <button 
-        className="create-pokemon-button" 
-        onClick={handleCreatePokemon}
-        style={{ minWidth: '70px', height: '36px', borderRadius: '8px', fontWeight: 'bold', fontSize: '1rem', background: '#43d13a', color: '#fff', border: 'none', boxShadow: '0 2px 8px rgba(0,0,0,0.10)', cursor: 'pointer', margin: '1.5rem auto', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', transition: 'background 0.2s' }}
-        onMouseOver={e => e.currentTarget.style.background = '#2fa32a'}
-        onMouseOut={e => e.currentTarget.style.background = '#43d13a'}
-      >
-        Créer
-      </button>
+      {isLoggedIn && !isGuest && (
+        <button 
+          className="create-pokemon-button" 
+          onClick={handleCreatePokemon}
+          style={{
+            position: 'fixed',
+            bottom: '32px',
+            right: '120px',
+            zIndex: 1000,
+            width: '72px',
+            height: '72px',
+            borderRadius: '16px',
+            background: '#43d13a',
+            border: '2.5px solid #228c1d',
+            boxShadow: '0 2px 16px 2px #000a',
+            color: '#fff',
+            fontWeight: 'bold',
+            fontSize: '1.15rem',
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textAlign: 'center',
+            transition: 'background 0.2s, border 0.2s, box-shadow 0.2s',
+          }}
+          onMouseOver={e => {
+            e.currentTarget.style.background = '#2fa32a';
+            e.currentTarget.style.border = '2.5px solid #43d13a';
+            e.currentTarget.style.boxShadow = '0 4px 24px 4px #43d13a33';
+          }}
+          onMouseOut={e => {
+            e.currentTarget.style.background = '#43d13a';
+            e.currentTarget.style.border = '2.5px solid #228c1d';
+            e.currentTarget.style.boxShadow = '0 2px 16px 2px #000a';
+          }}
+        >
+          Créer
+        </button>
+      )}
     </div>
   );
 }

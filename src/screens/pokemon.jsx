@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import axios from 'axios';
 import './pokemon.css';
 import CardPokemonDetail from '../components/CardPokemon/CardPokemon';
@@ -17,12 +17,17 @@ import { motion, AnimatePresence } from 'framer-motion';
 function PokemonDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
   const [pokemon, setPokemon] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [currentLanguage, setCurrentLanguage] = useState(() => localStorage.getItem('currentLanguage') || 'french');
+  const [currentLanguage, setCurrentLanguage] = useState(
+    () => (location.state && location.state.currentLanguage) || localStorage.getItem('currentLanguage') || 'french'
+  );
   const [imageSet, setImageSet] = useState(() => localStorage.getItem('imageSet') || 'g7');
   const [isDeleting, setIsDeleting] = useState(false);
+  const isGuest = localStorage.getItem('guest') === '1';
+  const isLoggedIn = !!localStorage.getItem('token');
 
   const getImageSet = () => {
     switch (imageSet) {
@@ -74,19 +79,18 @@ function PokemonDetail() {
   };
 
   const handleDelete = async () => {
-    if (window.confirm('Êtes-vous sûr de vouloir supprimer ce Pokémon ?')) {
-      setIsDeleting(true);
-      setTimeout(async () => {
-        try {
-          await axios.delete(`http://localhost:3000/api/pokemons/${id}`);
-          navigate('/');
-        } catch (err) {
-          console.error('Erreur lors de la suppression du Pokémon:', err);
-          setError('Impossible de supprimer le Pokémon');
-          setIsDeleting(false);
-        }
-      }, 350); // durée de l'animation
-    }
+    setIsDeleting(true);
+    setTimeout(async () => {
+      try {
+        const token = localStorage.getItem('token');
+        await axios.delete(`http://localhost:3000/api/pokemons/${id}`, token ? { headers: { Authorization: `Bearer ${token}` } } : {});
+        navigate('/');
+      } catch (err) {
+        console.error('Erreur lors de la suppression du Pokémon:', err);
+        setError('Impossible de supprimer le Pokémon');
+        setIsDeleting(false);
+      }
+    }, 350); // durée de l'animation
   };
 
   if (loading) {
@@ -95,9 +99,9 @@ function PokemonDetail() {
 
   if (error) {
     return (
-      <div className="error-container">
+      <div className="error-container" style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',height:'100vh',color:'#fff',fontWeight:'bold',fontSize:'1.5rem'}}>
         <p className="error-message">{error}</p>
-        <button onClick={handleBack}>Retour à l&apos;accueil</button>
+        <button onClick={handleBack} style={{marginTop:'1.5rem',background:'#43d13a',color:'#fff',border:'none',borderRadius:'8px',padding:'12px 28px',fontWeight:'bold',fontSize:'1.1rem',cursor:'pointer'}}>Retour à l&apos;accueil</button>
       </div>
     );
   }
@@ -154,9 +158,11 @@ function PokemonDetail() {
                 onDelete={handleDelete}
               />
               <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                <button className="edit-button" style={{ marginTop: '2rem', width: 220 }} onClick={handleEdit}>
-                  Modifier ce Pokémon
-                </button>
+                {!isGuest && isLoggedIn && (
+                  <button className="edit-button" style={{ marginTop: '2rem', width: 220 }} onClick={handleEdit}>
+                    Modifier ce Pokémon
+                  </button>
+                )}
               </div>
             </motion.div>
           )}

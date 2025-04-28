@@ -14,11 +14,10 @@ const PokemonAdmin = () => {
     const fetchPokemons = async () => {
         try {
             setLoading(true);
-            const response = await fetch('/api/pokemons');
+            const response = await fetch('http://localhost:3000/api/pokemons');
             if (!response.ok) throw new Error('Failed to fetch Pokemon list');
-            
             const data = await response.json();
-            setPokemons(data);
+            setPokemons(data.pokemons);
         } catch (err) {
             setError(err.message);
         } finally {
@@ -32,9 +31,12 @@ const PokemonAdmin = () => {
         }
 
         try {
-            const response = await fetch(`/api/pokemons/${id}`, {
-                method: 'DELETE'
-            });
+            const token = localStorage.getItem('token');
+            const config = {
+                method: 'DELETE',
+                headers: token ? { 'Authorization': `Bearer ${token}` } : {}
+            };
+            const response = await fetch(`http://localhost:3000/api/pokemons/${id}`, config);
 
             if (!response.ok) throw new Error('Échec de la suppression du Pokémon');
             
@@ -43,6 +45,8 @@ const PokemonAdmin = () => {
             setError(err.message);
         }
     };
+
+    const isLoggedIn = !!localStorage.getItem('token');
 
     if (loading) return <div className="loading">Chargement...</div>;
     if (error) return <div className="error">{error}</div>;
@@ -61,14 +65,14 @@ const PokemonAdmin = () => {
                     <div key={pokemon.id} className="pokemon-item">
                         <div className="pokemon-info">
                             <img 
-                                src={pokemon.imageUrl} 
-                                alt={pokemon.names?.fr || pokemon.names?.en || 'Pokémon'} 
+                                src={pokemon.image} 
+                                alt={pokemon.name?.french || pokemon.name?.english || 'Pokémon'} 
                                 className="pokemon-thumbnail"
                             />
                             <div className="pokemon-details">
-                                <h3>{pokemon.names?.fr || pokemon.names?.en}</h3>
+                                <h3>{pokemon.name?.french || pokemon.name?.english}</h3>
                                 <div className="pokemon-types">
-                                    {pokemon.types.map(type => (
+                                    {pokemon.type.map(type => (
                                         <span key={type} className={`type-badge ${type.toLowerCase()}`}>
                                             {type}
                                         </span>
@@ -77,18 +81,22 @@ const PokemonAdmin = () => {
                             </div>
                         </div>
                         <div className="pokemon-actions">
-                            <Link 
-                                to={`/admin/pokemon/${pokemon.id}/edit`}
-                                className="button secondary"
-                            >
-                                Modifier
-                            </Link>
-                            <button
-                                onClick={() => handleDelete(pokemon.id)}
-                                className="button danger"
-                            >
-                                Supprimer
-                            </button>
+                            {isLoggedIn && (
+                                <>
+                                    <Link 
+                                        to={`/admin/pokemon/${pokemon.id}/edit`}
+                                        className="button secondary"
+                                    >
+                                        Modifier
+                                    </Link>
+                                    <button
+                                        onClick={() => handleDelete(pokemon.id)}
+                                        className="button danger"
+                                    >
+                                        Supprimer
+                                    </button>
+                                </>
+                            )}
                         </div>
                     </div>
                 ))}

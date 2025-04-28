@@ -13,7 +13,7 @@ const statLabels = {
     speed: 'Vitesse',
     spAttack: 'Sp. Attaque',
     spDefense: 'Sp. Défense',
-    details: 'Modifier',
+    details: 'Détails',
     delete: 'Supprimer',
   },
   english: {
@@ -48,7 +48,7 @@ const statLabels = {
   },
 };
 
-const CardPokemon = ({ id, name, image, imageShiny, types, base, currentLanguage = 'french', onDetails, isDetailView, onDelete }) => {
+const CardPokemon = ({ id, name, image, imageShiny, types, base, currentLanguage = 'french', onDetails, isDetailView, onDelete, onEdit }) => {
   const [isShiny, setIsShiny] = useState(false);
   const typeArray = Array.isArray(types) ? types : [types];
   const mainType = typeArray[0] ? typeArray[0].toLowerCase() : 'normal';
@@ -59,10 +59,19 @@ const CardPokemon = ({ id, name, image, imageShiny, types, base, currentLanguage
 
   const t = statLabels[currentLanguage] || statLabels.french;
 
-  // Fonction de suppression sans confirmation (la confirmation est gérée par le parent)
+  // Fonction de suppression avec confirmation
   const handleDeleteClick = () => {
-    if (onDelete) onDelete(id);
+    if (isGuest) {
+      alert("Action interdite pour l'invité");
+      return;
+    }
+    if (window.confirm('Êtes-vous sûr de vouloir supprimer ce Pokémon ?')) {
+      if (onDelete) onDelete(id);
+    }
   };
+
+  const isGuest = localStorage.getItem('guest') === '1';
+  const isLoggedIn = !!localStorage.getItem('token');
 
   return (
     <HoloCardWrapper>
@@ -110,9 +119,11 @@ const CardPokemon = ({ id, name, image, imageShiny, types, base, currentLanguage
           </div>
           <div className="card-pokemon-action-buttons">
             <button className="details-btn" onClick={onDetails}>
-              {isDetailView ? 'Modifier' : t.details}
+              {t.details}
             </button>
-            <button className="delete-btn" onClick={handleDeleteClick}>{t.delete}</button>
+            {isLoggedIn && !isGuest && (
+              <button className="delete-btn" onClick={handleDeleteClick}>{t.delete}</button>
+            )}
           </div>
         </div>
       </div>
@@ -121,26 +132,17 @@ const CardPokemon = ({ id, name, image, imageShiny, types, base, currentLanguage
 };
 
 CardPokemon.propTypes = {
-  id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   imageShiny: PropTypes.string,
-  types: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.arrayOf(PropTypes.string)
-  ]).isRequired,
-  base: PropTypes.shape({
-    HP: PropTypes.number,
-    Attack: PropTypes.number,
-    Defense: PropTypes.number,
-    'Sp. Attack': PropTypes.number,
-    'Sp. Defense': PropTypes.number,
-    Speed: PropTypes.number,
-  }),
+  types: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]).isRequired,
+  base: PropTypes.object,
   currentLanguage: PropTypes.string,
-  onDetails: PropTypes.func,
+  onDetails: PropTypes.func.isRequired,
   isDetailView: PropTypes.bool,
   onDelete: PropTypes.func,
+  onEdit: PropTypes.func,
 };
 
 export default CardPokemon;
